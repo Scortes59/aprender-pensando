@@ -429,22 +429,40 @@ function viewCourseDetail(courseId) {
   setText("#routeKicker", "Curso");
   setText("#routeTitle", c.titulo);
 
-  const mods = (c.modulos || []).map((m) => `
-    <div class="item">
-      <div class="row">
-        <div>
-          <div class="item__title">${escapeHtml(m.titulo)}</div>
-          <p class="item__sub">${escapeHtml(m.descripcion)}</p>
-          <div class="card__meta" style="margin-top:8px">
-            <span class="chip">${(m.lecciones || []).length} lecciones</span>
-            <span class="chip">${escapeHtml(m.duracion)}</span>
+  const mods = (c.modulos || []).map((m) => {
+    const lessons = (m.lecciones || []).map((l) => `
+      <div class="item" style="background: rgba(255,255,255,.03); border-color: rgba(255,255,255,.08);">
+        <div class="row">
+          <div style="min-width:0">
+            <div class="item__title" style="font-size:14px">${escapeHtml(l.titulo)}</div>
+            <p class="item__sub" style="margin-top:6px">${escapeHtml(l.resumen || "")}</p>
           </div>
+          <span class="spacer"></span>
+          <a class="btn btn--soft" href="#/leccion/${encodeURIComponent(l.id)}">Abrir</a>
         </div>
-        <span class="spacer"></span>
-        <a class="btn btn--brand" href="#/cursos/${encodeURIComponent(c.id)}/modulo/${encodeURIComponent(m.id)}">Abrir módulo</a>
       </div>
-    </div>
-  `).join("");
+    `).join("");
+
+    return `
+      <div class="item">
+        <div class="row">
+          <div style="min-width:0">
+            <div class="item__title">${escapeHtml(m.titulo)}</div>
+            <p class="item__sub">${escapeHtml(m.descripcion)}</p>
+            <div class="card__meta" style="margin-top:8px">
+              <span class="chip">${(m.lecciones || []).length} lecciones</span>
+              <span class="chip">${escapeHtml(m.duracion)}</span>
+            </div>
+          </div>
+          <span class="spacer"></span>
+          <a class="btn btn--brand" href="#/cursos/${encodeURIComponent(c.id)}/modulo/${encodeURIComponent(m.id)}">Abrir módulo</a>
+        </div>
+        <div class="divider"></div>
+        <div class="muted" style="font-size:12px; margin-bottom:10px">Lecciones</div>
+        <div class="list">${lessons}</div>
+      </div>
+    `;
+  }).join("");
 
   $("#view").innerHTML = `
     <div class="grid">
