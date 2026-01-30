@@ -1,0 +1,26 @@
+{
+  "estadisticas": {
+    "nota": "Estas estadísticas son demostrativas y pueden actualizarse localmente en el futuro. La plataforma no tiene backend.",
+    "resumenContenido": {
+      "cursos": 6,
+      "modulosPorCurso": 5,
+      "leccionesAproximadas": 90,
+      "lecturasExtensas": 12,
+      "terminosGlosario": 15,
+      "actividades": 90,
+      "quizzes": 90
+    },
+    "usoPedagogicoSugerido": {
+      "tiempoSemanalMin": "2–3 horas",
+      "modalidades": ["aula", "casa", "comunidad"],
+      "estrategias": [
+        "Círculo de lectura con preguntas",
+        "Diario de campo (observación del territorio)",
+        "Entrevista a mayores y registro ético",
+        "Debate con reglas de respeto",
+        "Escritura con borradores y revisión"
+      ]
+    }
+  }
+}
+

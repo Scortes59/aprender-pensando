@@ -1,0 +1,53 @@
+{
+  "recursos": [
+    {
+      "id": "rec-guia-lectura-rural",
+      "nombre": "Guía de lectura rural (semáforo de comprensión)",
+      "tipo": "txt",
+      "archivo": "./assets/recursos/guia_lectura_rural.txt",
+      "descripcion": "Guía breve para lectura situada: antes/durante/después, inferencias y conexión con decisiones del territorio.",
+      "tags": ["lectura", "rural", "comprension", "estrategias"]
+    },
+    {
+      "id": "rec-guia-ia-responsable",
+      "nombre": "Guía de IA responsable (verificación y ética)",
+      "tipo": "txt",
+      "archivo": "./assets/recursos/guia_ia_responsable.txt",
+      "descripcion": "Reglas de uso responsable de IA en la escuela y la comunidad: verificación, privacidad, sesgos y honestidad académica.",
+      "tags": ["ia", "etica", "verificacion", "ciudadania-digital"]
+    },
+    {
+      "id": "rec-plantilla-rubrica",
+      "nombre": "Plantilla de rúbrica formativa (0–3)",
+      "tipo": "txt",
+      "archivo": "./assets/recursos/plantilla_rubrica.txt",
+      "descripcion": "Plantilla simple para evaluar evidencias con retroalimentación formativa (no solo nota).",
+      "tags": ["evaluacion", "rubrica", "retroalimentacion"]
+    },
+    {
+      "id": "rec-plantilla-bilingue",
+      "nombre": "Plantilla bilingüe (español + lengua indígena)",
+      "tipo": "txt",
+      "archivo": "./assets/recursos/plantilla_bilingue.txt",
+      "descripcion": "Estructura para escribir un mensaje en español y su versión en lengua indígena, con reflexión intercultural.",
+      "tags": ["bilinguismo", "interculturalidad", "lenguas"]
+    },
+    {
+      "id": "rec-guia-texto-academico",
+      "nombre": "Guía de texto académico (estructura y conectores)",
+      "tipo": "txt",
+      "archivo": "./assets/recursos/guia_texto_academico.txt",
+      "descripcion": "Estructura mínima de texto académico y conectores; incluye consejo para usar evidencia local.",
+      "tags": ["escritura", "academico", "conectores", "evidencia"]
+    },
+    {
+      "id": "rec-checklist-convivencia",
+      "nombre": "Checklist de convivencia y participación",
+      "tipo": "txt",
+      "archivo": "./assets/recursos/checklist_convivencia.txt",
+      "descripcion": "Lista práctica para conversaciones difíciles, acuerdos y participación comunitaria.",
+      "tags": ["convivencia", "participacion", "paz", "acuerdos"]
+    }
+  ]
+}
+

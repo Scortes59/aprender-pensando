@@ -1,0 +1,569 @@
+{
+  "courses": [
+    {
+      "id": "comprension-lectora-rural",
+      "titulo": "Comprensión lectora rural",
+      "nivel": "Básica secundaria (6°–9°) · adaptable",
+      "duracionSugerida": "5–8 semanas",
+      "enfoque": ["Rural", "Comprensión lectora", "Oralidad", "Lectura crítica"],
+      "descripcionCorta": "Estrategias de lectura con propósito, inferencias y lectura del territorio como texto (camino, agua, comunidad).",
+      "descripcionLarga": "Este curso fortalece la comprensión lectora desde el contexto rural: leer no es solo descifrar letras, también es interpretar el camino, el agua, las señales del entorno y los textos comunitarios (actas, avisos, instrucciones). Cada módulo combina lecturas extensas, actividades prácticas y autoevaluaciones. Se promueve la lectura en voz alta, el uso de un diario de campo, la verificación de información y la construcción de preguntas críticas. El objetivo es que el estudiante gane autonomía para comprender textos, participar con argumentos y cuidar el territorio a través de decisiones informadas.",
+      "objetivos": [
+        "Leer con propósito: identificar por qué y para qué se lee un texto.",
+        "Aplicar estrategias: idea principal, detalles, inferencias y preguntas críticas.",
+        "Fortalecer oralidad: lectura en voz alta con fluidez y comprensión.",
+        "Conectar lectura y territorio: registrar observaciones y construir sentido situado.",
+        "Producir un producto final: un informe/relato con evidencia local."
+      ],
+      "modulos": [
+        {
+          "id": "clr-m1",
+          "titulo": "El territorio como texto",
+          "duracion": "1 semana",
+          "descripcion": "Aprender a leer el entorno: señales del camino, del agua y de la convivencia. Se inicia un diario de campo para registrar observaciones y preguntas.",
+          "lecciones": [
+            {
+              "id": "clr-m1-l1",
+              "titulo": "Señales del camino: leer antes de correr",
+              "resumen": "Observa el camino hacia la escuela como un texto lleno de pistas. Aprende a describir con detalle e interpretar con cuidado para tomar decisiones seguras.",
+              "lecturas": ["lec_r1_territorio_como_texto"],
+              "actividades": ["act_clr-m1-l1"],
+              "autoevaluacion": "quiz_clr-m1-l1",
+              "recursos": [
+                { "nombre": "Guía de lectura rural", "archivo": "./assets/recursos/guia_lectura_rural.txt", "descripcion": "Estrategias antes/durante/después para comprender." }
+              ]
+            },
+            {
+              "id": "clr-m1-l2",
+              "titulo": "El agua habla: leer la quebrada y el río",
+              "resumen": "Identifica señales del agua (turbidez, sonido, olor) y escribe inferencias responsables. Conecta observación con cuidado ambiental.",
+              "lecturas": ["lec_r1_territorio_como_texto"],
+              "actividades": ["act_clr-m1-l2"],
+              "autoevaluacion": "quiz_clr-m1-l2",
+              "recursos": [
+                { "nombre": "Plantilla de rúbrica formativa", "archivo": "./assets/recursos/plantilla_rubrica.txt", "descripcion": "Para evaluar tu diario de campo." }
+              ]
+            },
+            {
+              "id": "clr-m1-l3",
+              "titulo": "Comunidad como texto: acuerdos y señales de convivencia",
+              "resumen": "Aprende a leer dinámicas de respeto, participación y conflicto en el aula y la comunidad. Practica preguntas críticas sin agresión.",
+              "lecturas": ["lec_r7_convivencia_dialogo"],
+              "actividades": ["act_clr-m1-l3"],
+              "autoevaluacion": "quiz_clr-m1-l3",
+              "recursos": [
+                { "nombre": "Checklist de convivencia", "archivo": "./assets/recursos/checklist_convivencia.txt", "descripcion": "Para conversaciones y acuerdos." }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "clr-m2",
+          "titulo": "Estrategias de comprensión",
+          "duracion": "1–2 semanas",
+          "descripcion": "Estrategias de comprensión lectora: propósito, predicción, idea principal, detalles e inferencias. Se trabaja con textos reales del territorio.",
+          "lecciones": [
+            {
+              "id": "clr-m2-l1",
+              "titulo": "Leer con propósito: ¿para qué leo esto?",
+              "resumen": "Activa conocimientos previos y define propósitos de lectura. Aprende a construir un ‘plan’ de lectura según el tipo de texto.",
+              "lecturas": ["lec_r2_comprension_lectora_rural"],
+              "actividades": ["act_clr-m2-l1"],
+              "autoevaluacion": "quiz_clr-m2-l1",
+              "recursos": [{ "nombre": "Guía de lectura rural", "archivo": "./assets/recursos/guia_lectura_rural.txt", "descripcion": "Ruta rápida de comprensión." }]
+            },
+            {
+              "id": "clr-m2-l2",
+              "titulo": "Idea principal y detalles: resumir sin copiar",
+              "resumen": "Aprende a resumir con tus palabras, seleccionando lo esencial. Diferencia lo central de lo accesorio para comprender mejor.",
+              "lecturas": ["lec_r2_comprension_lectora_rural"],
+              "actividades": ["act_clr-m2-l2"],
+              "autoevaluacion": "quiz_clr-m2-l2",
+              "recursos": [{ "nombre": "Plantilla de rúbrica formativa", "archivo": "./assets/recursos/plantilla_rubrica.txt", "descripcion": "Evalúa tu resumen." }]
+            },
+            {
+              "id": "clr-m2-l3",
+              "titulo": "Inferencias: leer entre líneas con evidencia",
+              "resumen": "Practica inferencias responsables: lo que el texto sugiere sin decirlo. Aprende a justificar inferencias con pistas del texto.",
+              "lecturas": ["lec_r2_comprension_lectora_rural", "lec_r9_fuentes_evidencia"],
+              "actividades": ["act_clr-m2-l3"],
+              "autoevaluacion": "quiz_clr-m2-l3",
+              "recursos": [{ "nombre": "Plantilla de rúbrica formativa", "archivo": "./assets/recursos/plantilla_rubrica.txt", "descripcion": "Evalúa tus inferencias y evidencia." }]
+            }
+          ]
+        },
+        {
+          "id": "clr-m3",
+          "titulo": "Oralidad y lectura en voz alta",
+          "duracion": "1 semana",
+          "descripcion": "Fortalecer fluidez, entonación y comprensión mediante lectura en voz alta y grabación de evidencias en el portafolio.",
+          "lecciones": [
+            {
+              "id": "clr-m3-l1",
+              "titulo": "Lectura en voz alta: ritmo, pausas y sentido",
+              "resumen": "Aprende a leer en voz alta sin correr: pausas, énfasis y claridad. La meta no es rápido, es comprensible.",
+              "lecturas": ["lec_r2_comprension_lectora_rural"],
+              "actividades": ["act_clr-m3-l1"],
+              "autoevaluacion": "quiz_clr-m3-l1",
+              "recursos": [{ "nombre": "Guía de lectura rural", "archivo": "./assets/recursos/guia_lectura_rural.txt", "descripcion": "Semáforo de comprensión + práctica." }]
+            },
+            {
+              "id": "clr-m3-l2",
+              "titulo": "Entonación y emoción: la voz también interpreta",
+              "resumen": "Explora cómo la entonación cambia el sentido de un texto. Identifica emociones y aprende a leer con intención.",
+              "lecturas": ["lec_r11_escritura_revision"],
+              "actividades": ["act_clr-m3-l2"],
+              "autoevaluacion": "quiz_clr-m3-l2",
+              "recursos": [{ "nombre": "Plantilla de rúbrica formativa", "archivo": "./assets/recursos/plantilla_rubrica.txt", "descripcion": "Evalúa tu lectura grabada." }]
+            },
+            {
+              "id": "clr-m3-l3",
+              "titulo": "Grabar evidencia: audio de lectura (offline)",
+              "resumen": "Usa el portafolio digital para guardar un audio breve de lectura. Aprende a escucharte para mejorar.",
+              "lecturas": ["lec_r12_cuidado_datos_privacidad"],
+              "actividades": ["act_clr-m3-l3"],
+              "autoevaluacion": "quiz_clr-m3-l3",
+              "recursos": [{ "nombre": "Checklist de convivencia", "archivo": "./assets/recursos/checklist_convivencia.txt", "descripcion": "Acuerdos de respeto al escuchar a otros." }]
+            }
+          ]
+        },
+        {
+          "id": "clr-m4",
+          "titulo": "Lectura crítica de documentos reales",
+          "duracion": "1–2 semanas",
+          "descripcion": "Analizar textos comunitarios y escolares: actas, instrucciones, noticias y mensajes. Distinguir hechos, opiniones y evidencia.",
+          "lecciones": [
+            {
+              "id": "clr-m4-l1",
+              "titulo": "Actas y acuerdos: leer para participar",
+              "resumen": "Aprende a leer actas: tema, decisiones, responsables y fechas. Practica preguntas para mejorar acuerdos.",
+              "lecturas": ["lec_r9_fuentes_evidencia", "lec_r8_participacion_comunitaria"],
+              "actividades": ["act_clr-m4-l1"],
+              "autoevaluacion": "quiz_clr-m4-l1",
+              "recursos": [{ "nombre": "Checklist de convivencia", "archivo": "./assets/recursos/checklist_convivencia.txt", "descripcion": "Apoya acuerdos claros." }]
+            },
+            {
+              "id": "clr-m4-l2",
+              "titulo": "Instrucciones y procedimientos: leer paso a paso",
+              "resumen": "Comprende textos instructivos (cuidado del agua, huerta, salud). Aprende a detectar pasos faltantes o confusos.",
+              "lecturas": ["lec_r2_comprension_lectora_rural"],
+              "actividades": ["act_clr-m4-l2"],
+              "autoevaluacion": "quiz_clr-m4-l2",
+              "recursos": [{ "nombre": "Guía de texto académico", "archivo": "./assets/recursos/guia_texto_academico.txt", "descripcion": "Estructura y claridad al escribir procedimientos." }]
+            },
+            {
+              "id": "clr-m4-l3",
+              "titulo": "Noticias y rumores: verificar antes de compartir",
+              "resumen": "Distingue rumor de información verificada. Aprende a pedir evidencia y a no difundir sin revisar.",
+              "lecturas": ["lec_r3_pensamiento_critico_preguntar", "lec_r12_cuidado_datos_privacidad"],
+              "actividades": ["act_clr-m4-l3"],
+              "autoevaluacion": "quiz_clr-m4-l3",
+              "recursos": [{ "nombre": "Guía de IA responsable", "archivo": "./assets/recursos/guia_ia_responsable.txt", "descripcion": "Verificación y sesgos." }]
+            }
+          ]
+        },
+        {
+          "id": "clr-m5",
+          "titulo": "Proyecto final: leer, registrar y escribir",
+          "duracion": "1–2 semanas",
+          "descripcion": "Integrar lo aprendido en un producto final con evidencia local: informe, crónica o relato con preguntas críticas y propuestas.",
+          "lecciones": [
+            {
+              "id": "clr-m5-l1",
+              "titulo": "Elegir un tema del territorio (pregunta guía)",
+              "resumen": "Define un tema real (agua, camino, convivencia, huerta). Formula una pregunta guía y plan de recolección de evidencia.",
+              "lecturas": ["lec_r6_texto_academico_con_evidencia"],
+              "actividades": ["act_clr-m5-l1"],
+              "autoevaluacion": "quiz_clr-m5-l1",
+              "recursos": [{ "nombre": "Guía de texto académico", "archivo": "./assets/recursos/guia_texto_academico.txt", "descripcion": "Estructura para tu informe final." }]
+            },
+            {
+              "id": "clr-m5-l2",
+              "titulo": "Escritura del producto: borrador y revisión",
+              "resumen": "Escribe un borrador y mejora con retroalimentación. Aprende a usar conectores, evidencia y una conclusión con propuesta.",
+              "lecturas": ["lec_r11_escritura_revision", "lec_r9_fuentes_evidencia"],
+              "actividades": ["act_clr-m5-l2"],
+              "autoevaluacion": "quiz_clr-m5-l2",
+              "recursos": [{ "nombre": "Plantilla de rúbrica formativa", "archivo": "./assets/recursos/plantilla_rubrica.txt", "descripcion": "Revisión por criterios." }]
+            },
+            {
+              "id": "clr-m5-l3",
+              "titulo": "Socialización: compartir sin humillar",
+              "resumen": "Presenta tu producto final y escucha a otros con respeto. Practica preguntas críticas y retroalimentación formativa.",
+              "lecturas": ["lec_r10_debate_respetuoso", "lec_r7_convivencia_dialogo"],
+              "actividades": ["act_clr-m5-l3"],
+              "autoevaluacion": "quiz_clr-m5-l3",
+              "recursos": [{ "nombre": "Checklist de convivencia", "archivo": "./assets/recursos/checklist_convivencia.txt", "descripcion": "Reglas de diálogo." }]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pensamiento-critico-territorios-rurales",
+      "titulo": "Pensamiento crítico en territorios rurales",
+      "nivel": "Básica secundaria (7°–11°) · adaptable",
+      "duracionSugerida": "6–10 semanas",
+      "enfoque": ["Pensamiento crítico", "Argumentación", "Verificación", "Participación"],
+      "descripcionCorta": "Aprender a preguntar, verificar, argumentar y proponer acciones sobre problemas reales del territorio.",
+      "descripcionLarga": "Este curso enseña pensamiento crítico como una habilidad para la vida: preguntar sin humillar, verificar sin chisme, argumentar con evidencia y proponer acciones realistas. Se trabaja con situaciones del territorio (agua, caminos, convivencia, información en redes). El enfoque es rural e intercultural: se valora la palabra comunitaria y se aprende a debatir con respeto. El estudiante termina con una propuesta concreta y evaluable para mejorar un problema local, registrada en su portafolio offline.",
+      "objetivos": [
+        "Distinguir hechos, opiniones e inferencias.",
+        "Evaluar fuentes y evidencias con criterios.",
+        "Argumentar y debatir con reglas de convivencia.",
+        "Identificar problemas del territorio y proponer soluciones viables.",
+        "Cuidar la palabra: pensar críticamente sin violencia."
+      ],
+      "modulos": [
+        {
+          "id": "pctr-m1",
+          "titulo": "Preguntar para comprender",
+          "duracion": "1–2 semanas",
+          "descripcion": "Aprender a formular preguntas que abren comprensión: quién, qué, cuándo, por qué, para qué, cómo. Preguntas para investigar problemas del territorio.",
+          "lecciones": [
+            { "id": "pctr-m1-l1", "titulo": "¿Qué es una pregunta crítica?", "resumen": "Define pensamiento crítico y practica preguntas que buscan evidencia y contexto.", "lecturas": ["lec_r3_pensamiento_critico_preguntar"], "actividades": ["act_pctr-m1-l1"], "autoevaluacion": "quiz_pctr-m1-l1", "recursos": [{ "nombre": "Plantilla de rúbrica formativa", "archivo": "./assets/recursos/plantilla_rubrica.txt", "descripcion": "Evalúa la calidad de tus preguntas." }] },
+            { "id": "pctr-m1-l2", "titulo": "Hecho, opinión e inferencia", "resumen": "Aprende a separar hechos y opiniones para evitar discusiones inútiles. Justifica inferencias con pistas.", "lecturas": ["lec_r3_pensamiento_critico_preguntar", "lec_r9_fuentes_evidencia"], "actividades": ["act_pctr-m1-l2"], "autoevaluacion": "quiz_pctr-m1-l2", "recursos": [{ "nombre": "Guía de lectura rural", "archivo": "./assets/recursos/guia_lectura_rural.txt", "descripcion": "Apoya análisis de textos." }] },
+            { "id": "pctr-m1-l3", "titulo": "Criterios: cómo evaluar una idea", "resumen": "Construye criterios (evidencia, consistencia, respeto, utilidad) y aplícalos a un caso del territorio.", "lecturas": ["lec_r9_fuentes_evidencia"], "actividades": ["act_pctr-m1-l3"], "autoevaluacion": "quiz_pctr-m1-l3", "recursos": [{ "nombre": "Guía de IA responsable", "archivo": "./assets/recursos/guia_ia_responsable.txt", "descripcion": "Sesgos y verificación." }] }
+          ]
+        },
+        {
+          "id": "pctr-m2",
+          "titulo": "Fuentes y verificación",
+          "duracion": "1–2 semanas",
+          "descripcion": "Cómo sostener una afirmación con evidencia: documentos, entrevistas, observación y verificación cruzada.",
+          "lecciones": [
+            { "id": "pctr-m2-l1", "titulo": "Fuentes confiables en el territorio", "resumen": "Aprende a identificar fuentes y a citar de forma simple y ética.", "lecturas": ["lec_r9_fuentes_evidencia"], "actividades": ["act_pctr-m2-l1"], "autoevaluacion": "quiz_pctr-m2-l1", "recursos": [{ "nombre": "Guía de texto académico", "archivo": "./assets/recursos/guia_texto_academico.txt", "descripcion": "Referencias y estructura." }] },
+            { "id": "pctr-m2-l2", "titulo": "Entrevistas éticas a mayores", "resumen": "Diseña una entrevista con respeto: pedir permiso, no sacar de contexto y reconocer autoría.", "lecturas": ["lec_r9_fuentes_evidencia", "lec_r12_cuidado_datos_privacidad"], "actividades": ["act_pctr-m2-l2"], "autoevaluacion": "quiz_pctr-m2-l2", "recursos": [{ "nombre": "Checklist de convivencia", "archivo": "./assets/recursos/checklist_convivencia.txt", "descripcion": "Escucha y respeto." }] },
+            { "id": "pctr-m2-l3", "titulo": "Rumores y cadenas: cómo no caer", "resumen": "Verifica información antes de compartir. Practica un protocolo simple de verificación comunitaria.", "lecturas": ["lec_r12_cuidado_datos_privacidad", "lec_r3_pensamiento_critico_preguntar"], "actividades": ["act_pctr-m2-l3"], "autoevaluacion": "quiz_pctr-m2-l3", "recursos": [{ "nombre": "Guía de IA responsable", "archivo": "./assets/recursos/guia_ia_responsable.txt", "descripcion": "Verificación y sesgos." }] }
+          ]
+        },
+        {
+          "id": "pctr-m3",
+          "titulo": "Argumentación y debate",
+          "duracion": "1–2 semanas",
+          "descripcion": "Aprender a argumentar con estructura y debatir con reglas de convivencia. Diferenciar atacar ideas de atacar personas.",
+          "lecciones": [
+            { "id": "pctr-m3-l1", "titulo": "Argumentar: afirmación, razón, evidencia, propuesta", "resumen": "Construye argumentos completos y evita generalizaciones.", "lecturas": ["lec_r3_pensamiento_critico_preguntar"], "actividades": ["act_pctr-m3-l1"], "autoevaluacion": "quiz_pctr-m3-l1", "recursos": [{ "nombre": "Plantilla de rúbrica formativa", "archivo": "./assets/recursos/plantilla_rubrica.txt", "descripcion": "Evalúa tu argumento." }] },
+            { "id": "pctr-m3-l2", "titulo": "Debate respetuoso: disentir sin destruir", "resumen": "Practica roles de moderación, verificación y acuerdos.", "lecturas": ["lec_r10_debate_respetuoso"], "actividades": ["act_pctr-m3-l2"], "autoevaluacion": "quiz_pctr-m3-l2", "recursos": [{ "nombre": "Checklist de convivencia", "archivo": "./assets/recursos/checklist_convivencia.txt", "descripcion": "Reglas de diálogo." }] },
+            { "id": "pctr-m3-l3", "titulo": "Reconocer errores y corregir con evidencia", "resumen": "Aprende a cambiar de idea cuando la evidencia lo exige. Practica humildad intelectual.", "lecturas": ["lec_r9_fuentes_evidencia"], "actividades": ["act_pctr-m3-l3"], "autoevaluacion": "quiz_pctr-m3-l3", "recursos": [{ "nombre": "Guía de lectura rural", "archivo": "./assets/recursos/guia_lectura_rural.txt", "descripcion": "Apoya análisis crítico." }] }
+          ]
+        },
+        {
+          "id": "pctr-m4",
+          "titulo": "Problemas del territorio",
+          "duracion": "1–2 semanas",
+          "descripcion": "Identificar un problema real (agua, residuos, camino, convivencia) y analizar causas, actores y consecuencias.",
+          "lecciones": [
+            { "id": "pctr-m4-l1", "titulo": "Mapa de actores y causas", "resumen": "Construye un mapa de actores: quién influye, quién se afecta, quién puede aportar.", "lecturas": ["lec_r8_participacion_comunitaria"], "actividades": ["act_pctr-m4-l1"], "autoevaluacion": "quiz_pctr-m4-l1", "recursos": [{ "nombre": "Checklist de convivencia", "archivo": "./assets/recursos/checklist_convivencia.txt", "descripcion": "Participación y acuerdos." }] },
+            { "id": "pctr-m4-l2", "titulo": "Consecuencias: pensar a corto y largo plazo", "resumen": "Analiza consecuencias ambientales y sociales. Practica cadenas causa-efecto con evidencia.", "lecturas": ["lec_r1_territorio_como_texto"], "actividades": ["act_pctr-m4-l2"], "autoevaluacion": "quiz_pctr-m4-l2", "recursos": [{ "nombre": "Guía de texto académico", "archivo": "./assets/recursos/guia_texto_academico.txt", "descripcion": "Organiza análisis." }] },
+            { "id": "pctr-m4-l3", "titulo": "Soluciones viables: no todo es ‘hacer un proyecto grande’", "resumen": "Diseña soluciones pequeñas pero medibles. Aprende a priorizar acciones reales.", "lecturas": ["lec_r6_texto_academico_con_evidencia"], "actividades": ["act_pctr-m4-l3"], "autoevaluacion": "quiz_pctr-m4-l3", "recursos": [{ "nombre": "Plantilla de rúbrica formativa", "archivo": "./assets/recursos/plantilla_rubrica.txt", "descripcion": "Evalúa viabilidad." }] }
+          ]
+        },
+        {
+          "id": "pctr-m5",
+          "titulo": "Producto final: propuesta argumentada",
+          "duracion": "1–2 semanas",
+          "descripcion": "Redactar y socializar una propuesta con evidencia. Construir acuerdos y seguimiento.",
+          "lecciones": [
+            { "id": "pctr-m5-l1", "titulo": "Redactar la propuesta (borrador)", "resumen": "Escribe una propuesta con estructura y evidencia local (observación/entrevista/documento).", "lecturas": ["lec_r6_texto_academico_con_evidencia"], "actividades": ["act_pctr-m5-l1"], "autoevaluacion": "quiz_pctr-m5-l1", "recursos": [{ "nombre": "Guía de texto académico", "archivo": "./assets/recursos/guia_texto_academico.txt", "descripcion": "Estructura y conectores." }] },
+            { "id": "pctr-m5-l2", "titulo": "Revisión por criterios y mejora", "resumen": "Revisa con criterios: claridad, evidencia, respeto, viabilidad. Mejora el texto.", "lecturas": ["lec_r11_escritura_revision"], "actividades": ["act_pctr-m5-l2"], "autoevaluacion": "quiz_pctr-m5-l2", "recursos": [{ "nombre": "Plantilla de rúbrica formativa", "archivo": "./assets/recursos/plantilla_rubrica.txt", "descripcion": "Rúbrica formativa." }] },
+            { "id": "pctr-m5-l3", "titulo": "Socialización y acuerdos", "resumen": "Presenta tu propuesta y construye un acuerdo de seguimiento. Practica debate respetuoso.", "lecturas": ["lec_r10_debate_respetuoso", "lec_r8_participacion_comunitaria"], "actividades": ["act_pctr-m5-l3"], "autoevaluacion": "quiz_pctr-m5-l3", "recursos": [{ "nombre": "Checklist de convivencia", "archivo": "./assets/recursos/checklist_convivencia.txt", "descripcion": "Acuerdos y seguimiento." }] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ia-responsable",
+      "titulo": "Inteligencia Artificial responsable",
+      "nivel": "Secundaria y media (8°–11°) · adaptable",
+      "duracionSugerida": "5–8 semanas",
+      "enfoque": ["IA", "Ética", "Verificación", "Privacidad", "Sesgos"],
+      "descripcionCorta": "Usa IA como apoyo para estudiar sin perder ética: verificación, privacidad, sesgos y honestidad académica.",
+      "descripcionLarga": "Este curso introduce la inteligencia artificial desde una mirada responsable y situada. Se aprende qué puede y qué no puede hacer la IA, cómo verificar información, cómo evitar sesgos y cómo cuidar la privacidad en comunidades vulnerables. El objetivo no es ‘usar IA por moda’, sino comprenderla para tomar decisiones informadas, producir mejor texto académico, apoyar lectura y fortalecer ciudadanía digital. Incluye prácticas de evaluación de respuestas y construcción de criterios éticos.",
+      "objetivos": [
+        "Comprender conceptos básicos de IA (sin tecnicismos innecesarios).",
+        "Aplicar verificación: contrastar con fuentes y evidencia.",
+        "Identificar riesgos: sesgos, desinformación, privacidad.",
+        "Usar IA para apoyar aprendizaje (no reemplazar pensamiento).",
+        "Construir un acuerdo de uso responsable en el aula."
+      ],
+      "modulos": [
+        {
+          "id": "iar-m1",
+          "titulo": "IA sin mito: qué es y qué no es",
+          "duracion": "1 semana",
+          "descripcion": "Diferenciar IA de magia. Reconocer límites: errores, alucinaciones, falta de contexto local.",
+          "lecciones": [
+            { "id": "iar-m1-l1", "titulo": "IA como herramienta (no como verdad)", "resumen": "Comprende la IA como apoyo. Identifica límites y por qué puede equivocarse.", "lecturas": ["lec_r4_ia_responsable_escuela"], "actividades": ["act_iar-m1-l1"], "autoevaluacion": "quiz_iar-m1-l1", "recursos": [{ "nombre": "Guía de IA responsable", "archivo": "./assets/recursos/guia_ia_responsable.txt", "descripcion": "Reglas de uso." }] },
+            { "id": "iar-m1-l2", "titulo": "Preguntar bien: prompts con contexto rural", "resumen": "Aprende a escribir preguntas claras con contexto local para obtener respuestas más útiles.", "lecturas": ["lec_r3_pensamiento_critico_preguntar"], "actividades": ["act_iar-m1-l2"], "autoevaluacion": "quiz_iar-m1-l2", "recursos": [{ "nombre": "Guía de lectura rural", "archivo": "./assets/recursos/guia_lectura_rural.txt", "descripcion": "Propósito y claridad." }] },
+            { "id": "iar-m1-l3", "titulo": "Cuando la IA inventa: detectar alucinaciones", "resumen": "Identifica señales de respuestas inventadas. Practica el hábito de verificar.", "lecturas": ["lec_r9_fuentes_evidencia"], "actividades": ["act_iar-m1-l3"], "autoevaluacion": "quiz_iar-m1-l3", "recursos": [{ "nombre": "Guía de IA responsable", "archivo": "./assets/recursos/guia_ia_responsable.txt", "descripcion": "Verificación." }] }
+          ]
+        },
+        {
+          "id": "iar-m2",
+          "titulo": "Verificación y fuentes",
+          "duracion": "1–2 semanas",
+          "descripcion": "Contrastar respuestas de IA con fuentes: documentos, entrevistas y observación. Construir un “protocolo de verificación”.",
+          "lecciones": [
+            { "id": "iar-m2-l1", "titulo": "Protocolo de verificación (3 pasos)", "resumen": "Define un protocolo simple: (1) buscar otra fuente, (2) preguntar a un experto local, (3) registrar evidencia.", "lecturas": ["lec_r9_fuentes_evidencia"], "actividades": ["act_iar-m2-l1"], "autoevaluacion": "quiz_iar-m2-l1", "recursos": [{ "nombre": "Guía de IA responsable", "archivo": "./assets/recursos/guia_ia_responsable.txt", "descripcion": "Reglas prácticas." }] },
+            { "id": "iar-m2-l2", "titulo": "IA y lectura: resumir sin perder sentido", "resumen": "Usa IA para resumir, pero evalúa si el resumen conserva idea principal y matices.", "lecturas": ["lec_r2_comprension_lectora_rural"], "actividades": ["act_iar-m2-l2"], "autoevaluacion": "quiz_iar-m2-l2", "recursos": [{ "nombre": "Guía de texto académico", "archivo": "./assets/recursos/guia_texto_academico.txt", "descripcion": "Estructura y síntesis." }] },
+            { "id": "iar-m2-l3", "titulo": "IA y escritura: mejorar borradores con honestidad", "resumen": "Aprende a usar IA para revisar conectores y claridad sin copiar. Declara tu uso de herramientas.", "lecturas": ["lec_r11_escritura_revision"], "actividades": ["act_iar-m2-l3"], "autoevaluacion": "quiz_iar-m2-l3", "recursos": [{ "nombre": "Guía de texto académico", "archivo": "./assets/recursos/guia_texto_academico.txt", "descripcion": "Borradores y revisión." }] }
+          ]
+        },
+        {
+          "id": "iar-m3",
+          "titulo": "Sesgos y respeto cultural",
+          "duracion": "1 semana",
+          "descripcion": "Detectar sesgos y estereotipos sobre ruralidad e indígenas. Formular preguntas que corrijan miradas discriminatorias.",
+          "lecciones": [
+            { "id": "iar-m3-l1", "titulo": "Sesgos: cuando la respuesta discrimina", "resumen": "Identifica estereotipos y corrige con preguntas y evidencia del territorio.", "lecturas": ["lec_r4_ia_responsable_escuela", "lec_r5_bilinguismo_intercultural"], "actividades": ["act_iar-m3-l1"], "autoevaluacion": "quiz_iar-m3-l1", "recursos": [{ "nombre": "Plantilla bilingüe", "archivo": "./assets/recursos/plantilla_bilingue.txt", "descripcion": "Respeto intercultural." }] },
+            { "id": "iar-m3-l2", "titulo": "IA y lengua: límites de la traducción", "resumen": "Comprende que traducción no es literal. Usa glosario y consulta hablantes.", "lecturas": ["lec_r5_bilinguismo_intercultural"], "actividades": ["act_iar-m3-l2"], "autoevaluacion": "quiz_iar-m3-l2", "recursos": [{ "nombre": "Plantilla bilingüe", "archivo": "./assets/recursos/plantilla_bilingue.txt", "descripcion": "Mensaje bilingüe." }] },
+            { "id": "iar-m3-l3", "titulo": "Criterios éticos para uso escolar", "resumen": "Construye criterios: privacidad, verificación, respeto, autoría. Aplica a un caso real.", "lecturas": ["lec_r12_cuidado_datos_privacidad"], "actividades": ["act_iar-m3-l3"], "autoevaluacion": "quiz_iar-m3-l3", "recursos": [{ "nombre": "Guía de IA responsable", "archivo": "./assets/recursos/guia_ia_responsable.txt", "descripcion": "Ética aplicada." }] }
+          ]
+        },
+        {
+          "id": "iar-m4",
+          "titulo": "Privacidad y cuidado de datos",
+          "duracion": "1 semana",
+          "descripcion": "Ciudadanía digital: datos sensibles, consentimiento, cuidado de menores y acuerdos de aula.",
+          "lecciones": [
+            { "id": "iar-m4-l1", "titulo": "Datos sensibles y consentimiento", "resumen": "Aprende qué no compartir y por qué. Diseña un acuerdo de cuidado de datos.", "lecturas": ["lec_r12_cuidado_datos_privacidad"], "actividades": ["act_iar-m4-l1"], "autoevaluacion": "quiz_iar-m4-l1", "recursos": [{ "nombre": "Checklist de convivencia", "archivo": "./assets/recursos/checklist_convivencia.txt", "descripcion": "Acuerdos en el aula." }] },
+            { "id": "iar-m4-l2", "titulo": "Portafolio offline: privacidad por diseño", "resumen": "Comprende por qué el portafolio se guarda localmente y cómo proteger el dispositivo.", "lecturas": ["lec_r12_cuidado_datos_privacidad"], "actividades": ["act_iar-m4-l2"], "autoevaluacion": "quiz_iar-m4-l2", "recursos": [{ "nombre": "Guía de IA responsable", "archivo": "./assets/recursos/guia_ia_responsable.txt", "descripcion": "Buenas prácticas." }] },
+            { "id": "iar-m4-l3", "titulo": "Desinformación: detectar manipulación", "resumen": "Reconoce tácticas de manipulación. Practica verificación y respuesta responsable.", "lecturas": ["lec_r3_pensamiento_critico_preguntar"], "actividades": ["act_iar-m4-l3"], "autoevaluacion": "quiz_iar-m4-l3", "recursos": [{ "nombre": "Guía de lectura rural", "archivo": "./assets/recursos/guia_lectura_rural.txt", "descripcion": "Análisis crítico." }] }
+          ]
+        },
+        {
+          "id": "iar-m5",
+          "titulo": "Producto final: guía de uso responsable",
+          "duracion": "1–2 semanas",
+          "descripcion": "Crear una guía escolar (cartel/acta) con reglas de uso responsable de IA y verificación, con ejemplos del territorio.",
+          "lecciones": [
+            { "id": "iar-m5-l1", "titulo": "Diseñar la guía (borrador)", "resumen": "Define reglas claras, ejemplos y un protocolo de verificación. Evita tecnicismos innecesarios.", "lecturas": ["lec_r4_ia_responsable_escuela"], "actividades": ["act_iar-m5-l1"], "autoevaluacion": "quiz_iar-m5-l1", "recursos": [{ "nombre": "Guía de IA responsable", "archivo": "./assets/recursos/guia_ia_responsable.txt", "descripcion": "Base para tu guía." }] },
+            { "id": "iar-m5-l2", "titulo": "Revisión por pares: claridad y respeto", "resumen": "Revisa con rúbrica: claridad, verificación, privacidad, respeto cultural. Mejora el producto.", "lecturas": ["lec_r11_escritura_revision"], "actividades": ["act_iar-m5-l2"], "autoevaluacion": "quiz_iar-m5-l2", "recursos": [{ "nombre": "Plantilla de rúbrica formativa", "archivo": "./assets/recursos/plantilla_rubrica.txt", "descripcion": "Revisión." }] },
+            { "id": "iar-m5-l3", "titulo": "Socialización y acuerdo de aula", "resumen": "Presenta la guía y construye un acuerdo de aula firmado simbólicamente (compromiso).", "lecturas": ["lec_r8_participacion_comunitaria"], "actividades": ["act_iar-m5-l3"], "autoevaluacion": "quiz_iar-m5-l3", "recursos": [{ "nombre": "Checklist de convivencia", "archivo": "./assets/recursos/checklist_convivencia.txt", "descripcion": "Acuerdos." }] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bilinguismo-intercultural",
+      "titulo": "Bilingüismo intercultural (español – lenguas indígenas)",
+      "nivel": "Primaria alta y secundaria · adaptable",
+      "duracionSugerida": "6–10 semanas",
+      "enfoque": ["Interculturalidad", "Lenguas", "Oralidad", "Respeto cultural"],
+      "descripcionCorta": "Fortalece respeto por lenguas y saberes: glosario vivo, audio, textos bilingües y reflexión intercultural.",
+      "descripcionLarga": "Este curso acompaña prácticas de bilingüismo intercultural: reconocer que cada lengua es conocimiento y memoria. Se trabaja con glosario indígena (términos reales con contexto), actividades de oralidad (audio), lectura crítica de relatos del territorio y escritura bilingüe con propósito. Se enfatiza el respeto cultural: consentimiento, no burla por acento y diálogo de saberes. El producto final es un material bilingüe (cartel, cuento, guía) útil para escuela y comunidad.",
+      "objetivos": [
+        "Valorar lenguas como patrimonio vivo y derecho cultural.",
+        "Usar glosario con contexto y audio para fortalecer oralidad.",
+        "Diseñar textos bilingües con propósito comunitario.",
+        "Practicar normas de respeto intercultural en el aula.",
+        "Reflexionar sobre traducción, sentido y matices."
+      ],
+      "modulos": [
+        {
+          "id": "bi-m1",
+          "titulo": "Lengua, identidad y respeto",
+          "duracion": "1–2 semanas",
+          "descripcion": "Comprender la interculturalidad como diálogo. Construir acuerdos de aula para proteger la voz y evitar burla/discriminación.",
+          "lecciones": [
+            { "id": "bi-m1-l1", "titulo": "¿Qué es interculturalidad?", "resumen": "Diferencia ‘tolerar’ de ‘dialogar’. Define reglas de respeto lingüístico.", "lecturas": ["lec_r5_bilinguismo_intercultural"], "actividades": ["act_bi-m1-l1"], "autoevaluacion": "quiz_bi-m1-l1", "recursos": [{ "nombre": "Checklist de convivencia", "archivo": "./assets/recursos/checklist_convivencia.txt", "descripcion": "Acuerdos de aula." }] },
+            { "id": "bi-m1-l2", "titulo": "Lengua como memoria: por qué importa el nombre propio", "resumen": "Reconoce el valor de nombrar lenguas con su nombre propio (ej. Nasa Yuwe).", "lecturas": ["lec_r5_bilinguismo_intercultural"], "actividades": ["act_bi-m1-l2"], "autoevaluacion": "quiz_bi-m1-l2", "recursos": [{ "nombre": "Plantilla bilingüe", "archivo": "./assets/recursos/plantilla_bilingue.txt", "descripcion": "Estructura de escritura." }] },
+            { "id": "bi-m1-l3", "titulo": "El territorio habla: palabras para nombrar cuidado", "resumen": "Relaciona lengua y territorio: cómo las palabras enseñan cuidado del agua, tierra y comunidad.", "lecturas": ["lec_r1_territorio_como_texto"], "actividades": ["act_bi-m1-l3"], "autoevaluacion": "quiz_bi-m1-l3", "recursos": [{ "nombre": "Guía de lectura rural", "archivo": "./assets/recursos/guia_lectura_rural.txt", "descripcion": "Lectura situada." }] }
+          ]
+        },
+        {
+          "id": "bi-m2",
+          "titulo": "Glosario vivo (palabra + contexto + audio)",
+          "duracion": "1–2 semanas",
+          "descripcion": "Uso pedagógico del glosario indígena y grabación de audios offline por término (pronunciación).",
+          "lecciones": [
+            { "id": "bi-m2-l1", "titulo": "Buscar términos y entender contexto", "resumen": "Usa el glosario para comprender palabras con su contexto rural real.", "lecturas": ["lec_r5_bilinguismo_intercultural"], "actividades": ["act_bi-m2-l1"], "autoevaluacion": "quiz_bi-m2-l1", "recursos": [{ "nombre": "Plantilla bilingüe", "archivo": "./assets/recursos/plantilla_bilingue.txt", "descripcion": "Contexto y reflexión." }] },
+            { "id": "bi-m2-l2", "titulo": "Grabar pronunciación con consentimiento", "resumen": "Aprende a grabar audios de pronunciación y a cuidar privacidad y respeto cultural.", "lecturas": ["lec_r12_cuidado_datos_privacidad"], "actividades": ["act_bi-m2-l2"], "autoevaluacion": "quiz_bi-m2-l2", "recursos": [{ "nombre": "Checklist de convivencia", "archivo": "./assets/recursos/checklist_convivencia.txt", "descripcion": "Respeto al escuchar." }] },
+            { "id": "bi-m2-l3", "titulo": "Carteles bilingües para la escuela", "resumen": "Crea un cartel bilingüe (cuidado del agua, convivencia) con mensaje claro y respetuoso.", "lecturas": ["lec_r6_texto_academico_con_evidencia"], "actividades": ["act_bi-m2-l3"], "autoevaluacion": "quiz_bi-m2-l3", "recursos": [{ "nombre": "Plantilla bilingüe", "archivo": "./assets/recursos/plantilla_bilingue.txt", "descripcion": "Plantilla para el cartel." }] }
+          ]
+        },
+        {
+          "id": "bi-m3",
+          "titulo": "Traducción y matices",
+          "duracion": "1 semana",
+          "descripcion": "Comprender que traducir no es copiar palabra por palabra. Explorar matices, tono, y términos intraducibles.",
+          "lecciones": [
+            { "id": "bi-m3-l1", "titulo": "Traducción no literal: sentido primero", "resumen": "Aprende estrategias para traducir conservando sentido y respeto.", "lecturas": ["lec_r5_bilinguismo_intercultural"], "actividades": ["act_bi-m3-l1"], "autoevaluacion": "quiz_bi-m3-l1", "recursos": [{ "nombre": "Plantilla bilingüe", "archivo": "./assets/recursos/plantilla_bilingue.txt", "descripcion": "Reflexión intercultural." }] },
+            { "id": "bi-m3-l2", "titulo": "Palabras del territorio: agua, tierra, comunidad", "resumen": "Analiza palabras del glosario y cómo cambian tu forma de ver el territorio.", "lecturas": ["lec_r1_territorio_como_texto"], "actividades": ["act_bi-m3-l2"], "autoevaluacion": "quiz_bi-m3-l2", "recursos": [{ "nombre": "Guía de lectura rural", "archivo": "./assets/recursos/guia_lectura_rural.txt", "descripcion": "Preguntas críticas." }] },
+            { "id": "bi-m3-l3", "titulo": "Evitar apropiación: usar con cuidado", "resumen": "Reflexiona sobre quién puede usar palabras sagradas y cómo pedir permiso para aprender.", "lecturas": ["lec_r12_cuidado_datos_privacidad"], "actividades": ["act_bi-m3-l3"], "autoevaluacion": "quiz_bi-m3-l3", "recursos": [{ "nombre": "Checklist de convivencia", "archivo": "./assets/recursos/checklist_convivencia.txt", "descripcion": "Respeto cultural." }] }
+          ]
+        },
+        {
+          "id": "bi-m4",
+          "titulo": "Oralidad y narración",
+          "duracion": "1–2 semanas",
+          "descripcion": "Escucha y registro ético de relatos locales. Transformar oralidad en texto sin perder respeto ni sentido.",
+          "lecciones": [
+            { "id": "bi-m4-l1", "titulo": "Escuchar relatos de mayores", "resumen": "Diseña preguntas, escucha y registra con consentimiento. Identifica enseñanza del relato.", "lecturas": ["lec_r9_fuentes_evidencia"], "actividades": ["act_bi-m4-l1"], "autoevaluacion": "quiz_bi-m4-l1", "recursos": [{ "nombre": "Guía de texto académico", "archivo": "./assets/recursos/guia_texto_academico.txt", "descripcion": "Estructura de crónica." }] },
+            { "id": "bi-m4-l2", "titulo": "De oral a escrito: crónica del territorio", "resumen": "Escribe una crónica breve a partir de un relato o entrevista, cuidando fidelidad y autoría.", "lecturas": ["lec_r6_texto_academico_con_evidencia"], "actividades": ["act_bi-m4-l2"], "autoevaluacion": "quiz_bi-m4-l2", "recursos": [{ "nombre": "Plantilla de rúbrica formativa", "archivo": "./assets/recursos/plantilla_rubrica.txt", "descripcion": "Evaluación de crónica." }] },
+            { "id": "bi-m4-l3", "titulo": "Lectura en voz alta bilingüe", "resumen": "Practica lectura en voz alta en español y, si aplica, en lengua indígena con apoyo de hablante.", "lecturas": ["lec_r2_comprension_lectora_rural"], "actividades": ["act_bi-m4-l3"], "autoevaluacion": "quiz_bi-m4-l3", "recursos": [{ "nombre": "Guía de lectura rural", "archivo": "./assets/recursos/guia_lectura_rural.txt", "descripcion": "Fluidez y comprensión." }] }
+          ]
+        },
+        {
+          "id": "bi-m5",
+          "titulo": "Producto final: material bilingüe útil",
+          "duracion": "1–2 semanas",
+          "descripcion": "Crear un material bilingüe (cartel, cuento, guía) para la escuela o comunidad. Revisar, grabar audio y socializar con respeto.",
+          "lecciones": [
+            { "id": "bi-m5-l1", "titulo": "Diseño del material (borrador)", "resumen": "Elige propósito y audiencia. Diseña mensaje bilingüe con contexto y claridad.", "lecturas": ["lec_r5_bilinguismo_intercultural"], "actividades": ["act_bi-m5-l1"], "autoevaluacion": "quiz_bi-m5-l1", "recursos": [{ "nombre": "Plantilla bilingüe", "archivo": "./assets/recursos/plantilla_bilingue.txt", "descripcion": "Estructura." }] },
+            { "id": "bi-m5-l2", "titulo": "Revisión con hablantes y criterios", "resumen": "Revisa la versión en lengua indígena con apoyo de hablantes (si es posible) y ajusta con respeto.", "lecturas": ["lec_r11_escritura_revision"], "actividades": ["act_bi-m5-l2"], "autoevaluacion": "quiz_bi-m5-l2", "recursos": [{ "nombre": "Plantilla de rúbrica formativa", "archivo": "./assets/recursos/plantilla_rubrica.txt", "descripcion": "Criterios de calidad." }] },
+            { "id": "bi-m5-l3", "titulo": "Socialización y memoria (portafolio)", "resumen": "Presenta el material y guarda evidencia en el portafolio: texto final + audio opcional.", "lecturas": ["lec_r8_participacion_comunitaria"], "actividades": ["act_bi-m5-l3"], "autoevaluacion": "quiz_bi-m5-l3", "recursos": [{ "nombre": "Checklist de convivencia", "archivo": "./assets/recursos/checklist_convivencia.txt", "descripcion": "Respeto en socialización." }] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "produccion-texto-academico",
+      "titulo": "Producción de texto académico",
+      "nivel": "Secundaria y media (7°–11°) · adaptable",
+      "duracionSugerida": "6–10 semanas",
+      "enfoque": ["Escritura", "Argumentación", "Evidencia", "Borradores", "Rúbrica"],
+      "descripcionCorta": "Escribe textos académicos con evidencia local: borradores, conectores, citas simples y revisión por criterios.",
+      "descripcionLarga": "Este curso acompaña la producción de textos académicos claros y útiles: informes, ensayos cortos, crónicas e informes de lectura. Se enseña a formular preguntas guía, organizar ideas, usar conectores, incorporar evidencia del territorio (observación, entrevistas, actas) y revisar por borradores. El objetivo es que el estudiante escriba para comprender y transformar: no solo para una nota. Incluye rúbricas formativas y portafolio offline para guardar versiones.",
+      "objetivos": [
+        "Planificar un texto: propósito, audiencia y pregunta guía.",
+        "Organizar ideas con conectores y estructura.",
+        "Incorporar evidencia y citar de forma simple y ética.",
+        "Revisar por borradores y mejorar con retroalimentación.",
+        "Producir un texto final con propuesta o conclusión."
+      ],
+      "modulos": [
+        {
+          "id": "pta-m1",
+          "titulo": "Planificación y propósito",
+          "duracion": "1–2 semanas",
+          "descripcion": "Definir propósito, audiencia y pregunta guía. Construir un esquema y recolectar evidencia local.",
+          "lecciones": [
+            { "id": "pta-m1-l1", "titulo": "Propósito y audiencia: escribir para alguien", "resumen": "Define a quién escribes y para qué. Ajusta tono y vocabulario sin perder claridad.", "lecturas": ["lec_r6_texto_academico_con_evidencia"], "actividades": ["act_pta-m1-l1"], "autoevaluacion": "quiz_pta-m1-l1", "recursos": [{ "nombre": "Guía de texto académico", "archivo": "./assets/recursos/guia_texto_academico.txt", "descripcion": "Estructura mínima." }] },
+            { "id": "pta-m1-l2", "titulo": "Pregunta guía y esquema", "resumen": "Formula una pregunta guía y crea un esquema (introducción, desarrollo, conclusión).", "lecturas": ["lec_r6_texto_academico_con_evidencia"], "actividades": ["act_pta-m1-l2"], "autoevaluacion": "quiz_pta-m1-l2", "recursos": [{ "nombre": "Guía de texto académico", "archivo": "./assets/recursos/guia_texto_academico.txt", "descripcion": "Planificación." }] },
+            { "id": "pta-m1-l3", "titulo": "Evidencia local: observar y entrevistar", "resumen": "Recolecta evidencia con ética: observación y entrevista breve. Registra en portafolio.", "lecturas": ["lec_r9_fuentes_evidencia"], "actividades": ["act_pta-m1-l3"], "autoevaluacion": "quiz_pta-m1-l3", "recursos": [{ "nombre": "Plantilla de rúbrica formativa", "archivo": "./assets/recursos/plantilla_rubrica.txt", "descripcion": "Criterios." }] }
+          ]
+        },
+        {
+          "id": "pta-m2",
+          "titulo": "Estructura y conectores",
+          "duracion": "1–2 semanas",
+          "descripcion": "Construir párrafos con idea principal + evidencia. Usar conectores para ordenar y argumentar.",
+          "lecciones": [
+            { "id": "pta-m2-l1", "titulo": "Párrafos con idea y evidencia", "resumen": "Aprende a construir párrafos sólidos: idea, explicación, ejemplo, cierre.", "lecturas": ["lec_r6_texto_academico_con_evidencia"], "actividades": ["act_pta-m2-l1"], "autoevaluacion": "quiz_pta-m2-l1", "recursos": [{ "nombre": "Guía de texto académico", "archivo": "./assets/recursos/guia_texto_academico.txt", "descripcion": "Conectores útiles." }] },
+            { "id": "pta-m2-l2", "titulo": "Conectores: ordenar sin repetir", "resumen": "Usa conectores para explicar, contrastar y concluir. Evita ‘y… y… y…’.", "lecturas": ["lec_r6_texto_academico_con_evidencia"], "actividades": ["act_pta-m2-l2"], "autoevaluacion": "quiz_pta-m2-l2", "recursos": [{ "nombre": "Guía de texto académico", "archivo": "./assets/recursos/guia_texto_academico.txt", "descripcion": "Lista de conectores." }] },
+            { "id": "pta-m2-l3", "titulo": "Citas simples y referencias", "resumen": "Aprende a citar entrevistas y documentos con formato simple y claro.", "lecturas": ["lec_r9_fuentes_evidencia"], "actividades": ["act_pta-m2-l3"], "autoevaluacion": "quiz_pta-m2-l3", "recursos": [{ "nombre": "Guía de texto académico", "archivo": "./assets/recursos/guia_texto_academico.txt", "descripcion": "Referencias." }] }
+          ]
+        },
+        {
+          "id": "pta-m3",
+          "titulo": "Borradores y revisión",
+          "duracion": "1–2 semanas",
+          "descripcion": "Escritura por borradores: revisión de claridad, evidencia y lenguaje. Retroalimentación entre pares.",
+          "lecciones": [
+            { "id": "pta-m3-l1", "titulo": "Borrador 1: escribir sin miedo", "resumen": "Escribe un borrador completo sin buscar perfección. Luego identifica qué mejorar.", "lecturas": ["lec_r11_escritura_revision"], "actividades": ["act_pta-m3-l1"], "autoevaluacion": "quiz_pta-m3-l1", "recursos": [{ "nombre": "Plantilla de rúbrica formativa", "archivo": "./assets/recursos/plantilla_rubrica.txt", "descripcion": "Retroalimentación." }] },
+            { "id": "pta-m3-l2", "titulo": "Revisión por pares (ayni)", "resumen": "Intercambia textos y retroalimenta con respeto: qué entendí, qué faltó, qué mejoraría.", "lecturas": ["lec_r11_escritura_revision", "lec_r7_convivencia_dialogo"], "actividades": ["act_pta-m3-l2"], "autoevaluacion": "quiz_pta-m3-l2", "recursos": [{ "nombre": "Checklist de convivencia", "archivo": "./assets/recursos/checklist_convivencia.txt", "descripcion": "Respeto al retroalimentar." }] },
+            { "id": "pta-m3-l3", "titulo": "Revisión de lenguaje: ortografía con sentido", "resumen": "Corrige para hacer comprensible el texto. Aprende a revisar puntuación para mejorar sentido.", "lecturas": ["lec_r11_escritura_revision"], "actividades": ["act_pta-m3-l3"], "autoevaluacion": "quiz_pta-m3-l3", "recursos": [{ "nombre": "Plantilla de rúbrica formativa", "archivo": "./assets/recursos/plantilla_rubrica.txt", "descripcion": "Criterios de lenguaje." }] }
+          ]
+        },
+        {
+          "id": "pta-m4",
+          "titulo": "Géneros académicos",
+          "duracion": "1–2 semanas",
+          "descripcion": "Explorar géneros: informe, ensayo corto, crónica académica. Elegir el más adecuado según propósito.",
+          "lecciones": [
+            { "id": "pta-m4-l1", "titulo": "Informe: describir y explicar", "resumen": "Aprende el informe como género: qué pasó, por qué, qué evidencia tengo.", "lecturas": ["lec_r6_texto_academico_con_evidencia"], "actividades": ["act_pta-m4-l1"], "autoevaluacion": "quiz_pta-m4-l1", "recursos": [{ "nombre": "Guía de texto académico", "archivo": "./assets/recursos/guia_texto_academico.txt", "descripcion": "Informe." }] },
+            { "id": "pta-m4-l2", "titulo": "Ensayo corto: argumentar con respeto", "resumen": "Aprende a argumentar: afirmación + razones + evidencia + contraargumento.", "lecturas": ["lec_r3_pensamiento_critico_preguntar", "lec_r10_debate_respetuoso"], "actividades": ["act_pta-m4-l2"], "autoevaluacion": "quiz_pta-m4-l2", "recursos": [{ "nombre": "Plantilla de rúbrica formativa", "archivo": "./assets/recursos/plantilla_rubrica.txt", "descripcion": "Argumentación." }] },
+            { "id": "pta-m4-l3", "titulo": "Crónica académica: narrar con evidencia", "resumen": "Escribe una crónica del territorio con detalle, evidencia y reflexión.", "lecturas": ["lec_r1_territorio_como_texto"], "actividades": ["act_pta-m4-l3"], "autoevaluacion": "quiz_pta-m4-l3", "recursos": [{ "nombre": "Plantilla de rúbrica formativa", "archivo": "./assets/recursos/plantilla_rubrica.txt", "descripcion": "Crónica." }] }
+          ]
+        },
+        {
+          "id": "pta-m5",
+          "titulo": "Texto final y socialización",
+          "duracion": "1–2 semanas",
+          "descripcion": "Redacción final, correcciones, referencias y socialización respetuosa. Guardar proceso en portafolio.",
+          "lecciones": [
+            { "id": "pta-m5-l1", "titulo": "Versión final con referencias", "resumen": "Integra evidencia y referencias simples. Revisa coherencia global del texto.", "lecturas": ["lec_r9_fuentes_evidencia"], "actividades": ["act_pta-m5-l1"], "autoevaluacion": "quiz_pta-m5-l1", "recursos": [{ "nombre": "Guía de texto académico", "archivo": "./assets/recursos/guia_texto_academico.txt", "descripcion": "Referencias." }] },
+            { "id": "pta-m5-l2", "titulo": "Portafolio: guardar borradores y aprendizaje", "resumen": "Guarda borradores y reflexiona sobre tu proceso: qué mejoró y qué falta.", "lecturas": ["lec_r11_escritura_revision"], "actividades": ["act_pta-m5-l2"], "autoevaluacion": "quiz_pta-m5-l2", "recursos": [{ "nombre": "Plantilla de rúbrica formativa", "archivo": "./assets/recursos/plantilla_rubrica.txt", "descripcion": "Metacognición." }] },
+            { "id": "pta-m5-l3", "titulo": "Socialización: retroalimentación formativa", "resumen": "Presenta tu texto y recibe preguntas críticas con respeto. Practica debate sin humillar.", "lecturas": ["lec_r10_debate_respetuoso"], "actividades": ["act_pta-m5-l3"], "autoevaluacion": "quiz_pta-m5-l3", "recursos": [{ "nombre": "Checklist de convivencia", "archivo": "./assets/recursos/checklist_convivencia.txt", "descripcion": "Reglas de diálogo." }] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "convivencia-participacion-comunitaria",
+      "titulo": "Convivencia y participación comunitaria",
+      "nivel": "Primaria alta y secundaria · adaptable",
+      "duracionSugerida": "6–10 semanas",
+      "enfoque": ["Convivencia", "Mediación", "Participación", "Acuerdos", "Paz"],
+      "descripcionCorta": "Construir acuerdos, tramitar conflictos con diálogo y fortalecer participación escolar y comunitaria.",
+      "descripcionLarga": "Este curso fortalece habilidades de convivencia: diálogo, escucha, reparación, acuerdos y participación. Se inspira en prácticas comunitarias (trabajo colectivo, mediación por la palabra) y las adapta al aula rural. El estudiante aprende a reconocer conflictos, distinguir necesidades, proponer soluciones y construir seguimiento. El producto final es un plan de convivencia y participación con acta, responsables y evaluación, guardado en el portafolio offline.",
+      "objetivos": [
+        "Reconocer conflictos y tramitar con diálogo respetuoso.",
+        "Construir acuerdos claros y revisables.",
+        "Fortalecer participación: actas, roles y seguimiento.",
+        "Prevenir violencia verbal y discriminación.",
+        "Diseñar una acción comunitaria concreta."
+      ],
+      "modulos": [
+        {
+          "id": "cpc-m1",
+          "titulo": "Convivencia: respeto y escucha",
+          "duracion": "1–2 semanas",
+          "descripcion": "Bases de convivencia: escuchar, hablar sin humillar y reconocer emociones. Crear acuerdos de aula.",
+          "lecciones": [
+            { "id": "cpc-m1-l1", "titulo": "Convivencia no es silencio: es cuidado", "resumen": "Comprende convivencia como cuidado de la relación, no como ausencia de diferencias.", "lecturas": ["lec_r7_convivencia_dialogo"], "actividades": ["act_cpc-m1-l1"], "autoevaluacion": "quiz_cpc-m1-l1", "recursos": [{ "nombre": "Checklist de convivencia", "archivo": "./assets/recursos/checklist_convivencia.txt", "descripcion": "Prácticas concretas." }] },
+            { "id": "cpc-m1-l2", "titulo": "Escucha activa y parafraseo", "resumen": "Practica escuchar y repetir con tus palabras lo que el otro dijo para bajar conflictos.", "lecturas": ["lec_r7_convivencia_dialogo"], "actividades": ["act_cpc-m1-l2"], "autoevaluacion": "quiz_cpc-m1-l2", "recursos": [{ "nombre": "Checklist de convivencia", "archivo": "./assets/recursos/checklist_convivencia.txt", "descripcion": "Herramientas." }] },
+            { "id": "cpc-m1-l3", "titulo": "Acuerdos claros y seguimiento", "resumen": "Escribe acuerdos claros (qué, quién, cuándo) y define cómo revisarlos semanalmente.", "lecturas": ["lec_r8_participacion_comunitaria"], "actividades": ["act_cpc-m1-l3"], "autoevaluacion": "quiz_cpc-m1-l3", "recursos": [{ "nombre": "Checklist de convivencia", "archivo": "./assets/recursos/checklist_convivencia.txt", "descripcion": "Seguimiento." }] }
+          ]
+        },
+        {
+          "id": "cpc-m2",
+          "titulo": "Mediación y reparación",
+          "duracion": "1–2 semanas",
+          "descripcion": "Tramitar conflictos: necesidades, reparación y mediación por la palabra (sin violencia).",
+          "lecciones": [
+            { "id": "cpc-m2-l1", "titulo": "Necesidades detrás del conflicto", "resumen": "Identifica necesidades (respeto, seguridad, pertenencia) y evita atacar a la persona.", "lecturas": ["lec_r7_convivencia_dialogo"], "actividades": ["act_cpc-m2-l1"], "autoevaluacion": "quiz_cpc-m2-l1", "recursos": [{ "nombre": "Checklist de convivencia", "archivo": "./assets/recursos/checklist_convivencia.txt", "descripcion": "Antes/durante/después." }] },
+            { "id": "cpc-m2-l2", "titulo": "Mediación: roles y reglas", "resumen": "Simula una mediación escolar: moderador, turnos, acuerdos y reparación.", "lecturas": ["lec_r10_debate_respetuoso"], "actividades": ["act_cpc-m2-l2"], "autoevaluacion": "quiz_cpc-m2-l2", "recursos": [{ "nombre": "Checklist de convivencia", "archivo": "./assets/recursos/checklist_convivencia.txt", "descripcion": "Reglas." }] },
+            { "id": "cpc-m2-l3", "titulo": "Reparación: cómo pedir perdón con acciones", "resumen": "Aprende que reparar no es solo ‘perdón’, es acción concreta y seguimiento.", "lecturas": ["lec_r7_convivencia_dialogo"], "actividades": ["act_cpc-m2-l3"], "autoevaluacion": "quiz_cpc-m2-l3", "recursos": [{ "nombre": "Plantilla de rúbrica formativa", "archivo": "./assets/recursos/plantilla_rubrica.txt", "descripcion": "Evalúa acuerdos." }] }
+          ]
+        },
+        {
+          "id": "cpc-m3",
+          "titulo": "Participación escolar",
+          "duracion": "1–2 semanas",
+          "descripcion": "Participar con evidencia: actas, roles, comités y seguimiento. Incluir jóvenes y familias.",
+          "lecciones": [
+            { "id": "cpc-m3-l1", "titulo": "Actas simples: memoria y transparencia", "resumen": "Aprende a escribir actas simples con acuerdos y responsables.", "lecturas": ["lec_r8_participacion_comunitaria"], "actividades": ["act_cpc-m3-l1"], "autoevaluacion": "quiz_cpc-m3-l1", "recursos": [{ "nombre": "Guía de texto académico", "archivo": "./assets/recursos/guia_texto_academico.txt", "descripcion": "Claridad al escribir." }] },
+            { "id": "cpc-m3-l2", "titulo": "Incluir voces: jóvenes, mayores y familias", "resumen": "Diseña estrategias de inclusión: horarios, lenguaje claro, invitación respetuosa.", "lecturas": ["lec_r8_participacion_comunitaria"], "actividades": ["act_cpc-m3-l2"], "autoevaluacion": "quiz_cpc-m3-l2", "recursos": [{ "nombre": "Checklist de convivencia", "archivo": "./assets/recursos/checklist_convivencia.txt", "descripcion": "Participación." }] },
+            { "id": "cpc-m3-l3", "titulo": "Seguimiento: que el acuerdo no se quede en papel", "resumen": "Crea un tablero simple de seguimiento semanal y registra avances en portafolio.", "lecturas": ["lec_r8_participacion_comunitaria"], "actividades": ["act_cpc-m3-l3"], "autoevaluacion": "quiz_cpc-m3-l3", "recursos": [{ "nombre": "Plantilla de rúbrica formativa", "archivo": "./assets/recursos/plantilla_rubrica.txt", "descripcion": "Evaluación." }] }
+          ]
+        },
+        {
+          "id": "cpc-m4",
+          "titulo": "Convivencia digital y rumor",
+          "duracion": "1 semana",
+          "descripcion": "Cuidar la palabra en redes: privacidad, verificación y respeto. Evitar chismes y exposición.",
+          "lecciones": [
+            { "id": "cpc-m4-l1", "titulo": "Privacidad como convivencia", "resumen": "Entiende privacidad como cuidado de otros. Construye reglas de aula para publicar.", "lecturas": ["lec_r12_cuidado_datos_privacidad"], "actividades": ["act_cpc-m4-l1"], "autoevaluacion": "quiz_cpc-m4-l1", "recursos": [{ "nombre": "Guía de IA responsable", "archivo": "./assets/recursos/guia_ia_responsable.txt", "descripcion": "Ciudadanía digital." }] },
+            { "id": "cpc-m4-l2", "titulo": "Rumor y desinformación: cómo cortar la cadena", "resumen": "Practica verificación y respuesta responsable en grupos de chat.", "lecturas": ["lec_r3_pensamiento_critico_preguntar"], "actividades": ["act_cpc-m4-l2"], "autoevaluacion": "quiz_cpc-m4-l2", "recursos": [{ "nombre": "Guía de lectura rural", "archivo": "./assets/recursos/guia_lectura_rural.txt", "descripcion": "Preguntas críticas." }] },
+            { "id": "cpc-m4-l3", "titulo": "Lenguaje respetuoso: sin apodos ni humillación", "resumen": "Analiza lenguaje que hiere y aprende alternativas para señalar un problema sin atacar.", "lecturas": ["lec_r7_convivencia_dialogo"], "actividades": ["act_cpc-m4-l3"], "autoevaluacion": "quiz_cpc-m4-l3", "recursos": [{ "nombre": "Checklist de convivencia", "archivo": "./assets/recursos/checklist_convivencia.txt", "descripcion": "Reglas." }] }
+          ]
+        },
+        {
+          "id": "cpc-m5",
+          "titulo": "Producto final: plan de convivencia y participación",
+          "duracion": "1–2 semanas",
+          "descripcion": "Diseñar un plan con acuerdos, roles, cronograma y evaluación. Guardar evidencias en portafolio.",
+          "lecciones": [
+            { "id": "cpc-m5-l1", "titulo": "Diagnóstico: ¿qué nos duele y qué nos fortalece?", "resumen": "Identifica problemas y fortalezas de convivencia con evidencia (observación y encuesta simple).", "lecturas": ["lec_r7_convivencia_dialogo"], "actividades": ["act_cpc-m5-l1"], "autoevaluacion": "quiz_cpc-m5-l1", "recursos": [{ "nombre": "Plantilla de rúbrica formativa", "archivo": "./assets/recursos/plantilla_rubrica.txt", "descripcion": "Criterios." }] },
+            { "id": "cpc-m5-l2", "titulo": "Plan: acuerdos, responsables y cronograma", "resumen": "Escribe un plan claro y realista. Define responsables y fechas de revisión.", "lecturas": ["lec_r8_participacion_comunitaria"], "actividades": ["act_cpc-m5-l2"], "autoevaluacion": "quiz_cpc-m5-l2", "recursos": [{ "nombre": "Checklist de convivencia", "archivo": "./assets/recursos/checklist_convivencia.txt", "descripcion": "Seguimiento." }] },
+            { "id": "cpc-m5-l3", "titulo": "Socialización y compromiso", "resumen": "Presenta el plan y construye un compromiso colectivo. Guarda acta y evidencia en portafolio.", "lecturas": ["lec_r10_debate_respetuoso"], "actividades": ["act_cpc-m5-l3"], "autoevaluacion": "quiz_cpc-m5-l3", "recursos": [{ "nombre": "Checklist de convivencia", "archivo": "./assets/recursos/checklist_convivencia.txt", "descripcion": "Diálogo." }] }
+          ]
+        }
+      ]
+    }
+  ]
+}
+

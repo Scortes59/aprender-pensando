@@ -1,0 +1,32 @@
+{
+  "seed": {
+    "nota": "Estas evidencias son ejemplos (principalmente texto) para iniciar el portafolio offline. Se importan solo una vez si el portafolio está vacío.",
+    "evidencias": [
+      {
+        "id": "seed_ev_001",
+        "type": "texto",
+        "titulo": "Diario de campo: camino a la escuela (Nápoles, Trujillo)",
+        "descripcion": "Observación del territorio y lectura del entorno.",
+        "content": "Hoy salí temprano porque el clima estaba cambiando. En el camino vi cómo el agua baja diferente cuando llueve en la parte alta: las piedras se vuelven resbalosas y el barro obliga a caminar más lento. Noté tres señales que me ayudan a leer el territorio: (1) el sonido del río cambia cuando trae más sedimentos; (2) las huellas de animales se marcan más cuando el suelo está húmedo; (3) los cultivos cerca del camino muestran qué tan cuidada está la tierra.\n\nMe di cuenta de que leer no es solo leer letras: también es leer señales. Si entiendo el camino, entiendo riesgos y decisiones. Por ejemplo, si una parte está erosionada, es mejor avisar y buscar una alternativa para no dañarla más.\n\nPregunta crítica: ¿qué acciones pequeñas podemos hacer como estudiantes para cuidar el camino y reducir la erosión (sin esperar a que otros lo hagan por nosotros)?",
+        "createdAt": 1738215600000
+      },
+      {
+        "id": "seed_ev_002",
+        "type": "texto",
+        "titulo": "Informe de lectura: acuerdos y convivencia",
+        "descripcion": "Resumen + reflexión sobre un texto del curso de convivencia.",
+        "content": "Idea principal: los acuerdos funcionan cuando son claros, realistas y se revisan. Un acuerdo no es una amenaza ni un castigo; es una forma de cuidarnos.\n\nTres ideas que me quedaron:\n1) Escuchar antes de responder reduce el conflicto.\n2) Poner ejemplos concretos evita que la conversación se vuelva ataque personal.\n3) El seguimiento es parte del acuerdo: si no se revisa, se olvida.\n\nAplicación al territorio: en mi comunidad a veces se habla de ‘respeto’, pero no se define qué significa en la práctica. Propongo que en el salón hagamos un acta simple con 5 acuerdos, y que cada semana revisemos uno con ejemplos reales.\n\nMi dificultad: cuando me enojo, subo el tono. Próximo paso: practicar respirar y pedir una pausa antes de seguir hablando.",
+        "createdAt": 1738302000000
+      },
+      {
+        "id": "seed_ev_003",
+        "type": "texto",
+        "titulo": "Borrador de texto académico: cuidado del agua",
+        "descripcion": "Borrador con conectores y evidencia local (entrevista).",
+        "content": "Pregunta guía: ¿cómo podemos mejorar el cuidado del agua en nuestra vereda sin depender solo de soluciones externas?\n\nIntroducción: El agua sostiene la vida y el trabajo. En zonas rurales, cuando falla el agua, afecta la escuela, la salud y la alimentación. Por eso, es importante analizar causas locales y proponer acciones posibles.\n\nDesarrollo (idea 1): Primero, la contaminación y el manejo de residuos afectan las quebradas. Por ejemplo, en la entrevista a mi abuelo él explicó que antes la gente cuidaba los nacimientos porque sabía que ‘la tierra devuelve lo que le das’. Sin embargo, ahora algunas basuras llegan al agua.\n\nDesarrollo (idea 2): Además, la sequía y el cambio climático obligan a almacenar agua y a usarla con cuidado. Por lo tanto, necesitamos acuerdos comunitarios sobre cómo y cuándo se usa.\n\nConclusión: En síntesis, cuidar el agua requiere hábitos y acuerdos. Propongo tres acciones: jornada de limpieza, señalización de nacimientos y registro semanal de consumo. Referencias: entrevista (abuelo), observación del camino y guía de convivencia.",
+        "createdAt": 1738388400000
+      }
+    ]
+  }
+}
+

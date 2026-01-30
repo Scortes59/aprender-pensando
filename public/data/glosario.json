@@ -1,0 +1,140 @@
+{
+  "terminos": [
+    {
+      "id": "glo_nasa_nasa",
+      "espanol": "Gente / Pueblo",
+      "indigena": "Nasa",
+      "lengua": "Nasa Yuwe (pueblo Nasa)",
+      "descripcion": "En Nasa Yuwe, “Nasa” se usa para nombrar al pueblo y a las personas que lo conforman. No es solo una etiqueta étnica: incluye una forma de estar en el territorio, de relacionarse con la comunidad y de asumir responsabilidades. En la escuela, reconocer esta palabra ayuda a entender que la identidad no es un adorno, sino una memoria viva. También recuerda que el aprendizaje no se separa del cuidado del territorio: ser “gente” implica sostener la vida comunitaria, respetar la palabra y participar en decisiones. En contextos interculturales, decir “Nasa” con respeto es un acto pedagógico: reconoce dignidad y pertenencia.",
+      "contexto": "En una clase en Nápoles (Trujillo), el docente puede invitar a hablar sobre cómo cada comunidad se nombra a sí misma. La palabra se usa al presentarse en reuniones, en relatos de mayores y en conversaciones sobre territorio y cultura. Útil en proyectos de identidad y memoria local.",
+      "audio": "./assets/audio/glosario/glo_nasa_nasa.mp3"
+    },
+    {
+      "id": "glo_nasa_kiwe",
+      "espanol": "Tierra / Territorio",
+      "indigena": "Kiwe",
+      "lengua": "Nasa Yuwe (pueblo Nasa)",
+      "descripcion": "“Kiwe” se refiere a la tierra, pero en sentido profundo: territorio como lugar de vida, trabajo, memoria y espiritualidad. En educación rural, esta palabra ayuda a comprender que el territorio no es solo un mapa; es un conjunto de relaciones: agua, caminos, cultivos, bosque, historia familiar y acuerdos comunitarios. En lecturas y debates, “Kiwe” permite preguntar: ¿cómo cuidamos la tierra?, ¿qué prácticas la protegen o la dañan?, ¿qué saberes tradicionales se transmiten sobre el suelo y el agua? Trabajar este término fortalece el pensamiento crítico situado.",
+      "contexto": "En actividades de diario de campo (camino, huerta, quebrada), se usa para nombrar el territorio como aula. Se puede vincular a prácticas de cuidado (reforestación, protección de nacimientos de agua, manejo de residuos) y a proyectos de convivencia comunitaria.",
+      "audio": "./assets/audio/glosario/glo_nasa_kiwe.mp3"
+    },
+    {
+      "id": "glo_nasa_yuwe",
+      "espanol": "Lengua / Palabra del pueblo",
+      "indigena": "Nasa Yuwe",
+      "lengua": "Nasa Yuwe (pueblo Nasa)",
+      "descripcion": "“Nasa Yuwe” nombra la lengua del pueblo Nasa. En una plataforma educativa intercultural, reconocer el nombre propio de la lengua es fundamental: la lengua no es “un dialecto”, es un sistema de conocimiento. La palabra conecta con historias, cantos, narraciones y formas de explicar la naturaleza. En el aula, trabajar este término invita a la escucha: ¿cómo suena?, ¿qué palabras nombran el territorio?, ¿qué conceptos no se traducen fácilmente al español? Esto fortalece el respeto cultural y abre la puerta a prácticas bilingües.",
+      "contexto": "Se usa para presentar el glosario y para motivar a estudiantes a entrevistar a mayores sobre palabras del territorio. También sirve para diseñar carteles bilingües (ej. cuidado del agua) que se puedan poner en la escuela o la comunidad.",
+      "audio": "./assets/audio/glosario/glo_nasa_yuwe.mp3"
+    },
+    {
+      "id": "glo_quechua_minga",
+      "espanol": "Trabajo comunitario",
+      "indigena": "Minga (mink'a)",
+      "lengua": "Quechua (uso extendido en Colombia andina)",
+      "descripcion": "“Minga” se refiere al trabajo colectivo que se realiza para beneficio común: arreglar un camino, limpiar una acequia, sembrar, construir, organizar una jornada. En la escuela rural, la minga es una metáfora y una práctica: aprender juntos, ayudarse y asumir tareas compartidas. Pedagógicamente, permite explicar que la educación no es solo individual; es comunitaria. También enseña gestión del tiempo, coordinación, solidaridad y corresponsabilidad.",
+      "contexto": "Puede usarse en proyectos de mejora escolar: minga de lectura (círculo de lectura), minga ambiental (limpieza y reforestación), minga de convivencia (acuerdos y seguimiento). Importante: siempre con consentimiento comunitario y cuidado de no instrumentalizar prácticas culturales.",
+      "audio": "./assets/audio/glosario/glo_quechua_minga.mp3"
+    },
+    {
+      "id": "glo_quechua_ayni",
+      "espanol": "Reciprocidad",
+      "indigena": "Ayni",
+      "lengua": "Quechua (Andes)",
+      "descripcion": "“Ayni” se traduce como reciprocidad: hoy por ti, mañana por mí. No es un favor aislado, sino un principio de equilibrio social. En contextos rurales, se ve cuando una familia apoya a otra en cosecha, cuidado de animales o construcción, y luego recibe apoyo cuando lo necesita. En educación, el ayni ayuda a comprender ética comunitaria: compartir saberes, cuidar recursos y sostener vínculos. Es clave para hablar de convivencia: la vida se hace con otros.",
+      "contexto": "En el aula, se puede aplicar como pacto de apoyo: tutorías entre pares, préstamo responsable de materiales, acompañamiento en lectura en voz alta. En proyectos comunitarios, se conecta con acciones de cuidado del agua o recuperación de espacios escolares.",
+      "audio": "./assets/audio/glosario/glo_quechua_ayni.mp3"
+    },
+    {
+      "id": "glo_wayuu_putchipuui",
+      "espanol": "Mediador / Palabrero",
+      "indigena": "Pütchipü'üi",
+      "lengua": "Wayuunaiki (pueblo Wayuu)",
+      "descripcion": "El “Pütchipü'üi” es una autoridad tradicional wayuu que media conflictos mediante la palabra. Su labor no se basa en castigo, sino en reparación y compensación, buscando restablecer el equilibrio entre clanes. En educación para la paz, este término ofrece una lección poderosa: el conflicto se puede tramitar con diálogo, reglas claras y responsabilidad. Pedagógicamente, invita a valorar la oralidad, la escucha y la negociación como competencias ciudadanas.",
+      "contexto": "En actividades de convivencia, se puede simular una mediación: dos grupos en desacuerdo y un ‘palabrero’ que guía el diálogo. Útil para construir acuerdos escolares y para hablar de justicia comunitaria sin violencia.",
+      "audio": "./assets/audio/glosario/glo_wayuu_putchipuui.mp3"
+    },
+    {
+      "id": "glo_wayuu_alijuna",
+      "espanol": "Persona no wayuu (foránea)",
+      "indigena": "Alijuna",
+      "lengua": "Wayuunaiki (pueblo Wayuu)",
+      "descripcion": "“Alijuna” se usa para referirse a quien no pertenece al pueblo wayuu. En contextos interculturales, sirve para hablar de fronteras culturales y de respeto: ser ‘de afuera’ implica aprender a escuchar, no imponer y pedir permiso. En educación rural, esta palabra puede abrir debates sobre discriminación, estereotipos y relaciones históricas entre comunidades y el Estado. También enseña que la identidad se construye desde la pertenencia y el reconocimiento mutuo.",
+      "contexto": "En el aula, se puede usar para reflexionar: ¿cómo nombramos a quien llega de otro lugar?, ¿qué derechos y deberes tenemos cuando visitamos un territorio?, ¿qué significa ‘ser huésped’ en una comunidad?",
+      "audio": "./assets/audio/glosario/glo_wayuu_alijuna.mp3"
+    },
+    {
+      "id": "glo_wayuu_juya",
+      "espanol": "Lluvia (fuerza de vida)",
+      "indigena": "Juyá (Juya)",
+      "lengua": "Wayuunaiki (pueblo Wayuu)",
+      "descripcion": "“Juyá” significa lluvia y, a la vez, representa una fuerza vital en la cosmovisión wayuu. No es solo clima: es esperanza, alimento, continuidad. Trabajar esta palabra en clase permite conectar ciencias naturales (ciclo del agua) con cultura (significado espiritual y social de la lluvia). Además, ayuda a comprender la realidad de territorios con sequía y la importancia de acuerdos para almacenar y cuidar el agua.",
+      "contexto": "Útil en proyectos ambientales: registro de lluvias, cuidado de jagüeyes, campañas de ahorro de agua. En lectura crítica, puede compararse cómo diferentes culturas entienden la lluvia: como recurso, como bendición, como derecho.",
+      "audio": "./assets/audio/glosario/glo_wayuu_juya.mp3"
+    },
+    {
+      "id": "glo_wayuu_mma",
+      "espanol": "Madre tierra",
+      "indigena": "Mma",
+      "lengua": "Wayuunaiki (pueblo Wayuu)",
+      "descripcion": "“Mma” representa la tierra en la cosmovisión wayuu. Nombrarla como ‘madre’ invita a pensar en relaciones de cuidado y reciprocidad: la tierra sostiene la vida, pero necesita respeto. En educación rural, este término sirve para hablar de suelos, agricultura, minería y decisiones comunitarias. También conecta con convivencia: cuidar la tierra es cuidar la comunidad, porque el territorio organiza la vida cotidiana (camino, agua, alimentos).",
+      "contexto": "En proyectos de huerta escolar, se puede usar para enseñar prácticas de cuidado del suelo: abonos orgánicos, protección contra erosión, manejo de residuos. En escritura académica, puede ser tema de un ensayo sobre territorio y derechos.",
+      "audio": "./assets/audio/glosario/glo_wayuu_mma.mp3"
+    },
+    {
+      "id": "glo_wayuu_wuinkat",
+      "espanol": "Agua",
+      "indigena": "Wuinkat",
+      "lengua": "Wayuunaiki (pueblo Wayuu)",
+      "descripcion": "“Wuinkat” nombra el agua, un elemento central para la vida y el trabajo. En territorios con escasez, el agua no se da por sentada: se busca, se almacena, se comparte y se defiende. Pedagógicamente, esta palabra permite trabajar ciencias (ciclo del agua, potabilización), matemáticas (medición de consumo), ciudadanía (derecho al agua) y convivencia (acuerdos de uso). También abre la pregunta crítica: ¿quién decide sobre el agua y con qué criterios?",
+      "contexto": "En la escuela se puede hacer un ‘mapa del agua’: de dónde viene, cómo llega, quién la cuida, dónde se desperdicia. En el portafolio, se puede guardar un registro semanal de acciones de ahorro y cuidado.",
+      "audio": "./assets/audio/glosario/glo_wayuu_wuinkat.mp3"
+    },
+    {
+      "id": "glo_embera_jaibana",
+      "espanol": "Curandero / autoridad espiritual",
+      "indigena": "Jaibaná (Jaibana)",
+      "lengua": "Emberá (familia Emberá)",
+      "descripcion": "El “Jaibaná” es una figura de conocimiento y guía espiritual en la cultura emberá. Su papel se relaciona con la salud, el equilibrio y el manejo de relaciones entre lo visible y lo invisible. En educación intercultural, este término se aborda con respeto, evitando folclorizar o estigmatizar. Pedagógicamente, permite hablar de salud comunitaria, plantas medicinales, ética del cuidado y formas de conocimiento no reducidas a lo ‘occidental’. También invita a discutir: ¿cómo dialogan medicina tradicional y medicina institucional en territorios rurales?",
+      "contexto": "Útil en proyectos de ciencias y ciudadanía: investigación sobre plantas medicinales (con consentimiento), entrevistas éticas a mayores, mapas de cuidado (qué hacemos cuando alguien se enferma). Siempre con enfoque de respeto cultural.",
+      "audio": "./assets/audio/glosario/glo_embera_jaibana.mp3"
+    },
+    {
+      "id": "glo_embera_jai",
+      "espanol": "Espíritu",
+      "indigena": "Jai",
+      "lengua": "Emberá (familia Emberá)",
+      "descripcion": "“Jai” se refiere a espíritus dentro de la cosmovisión emberá. En el aula, este término no se trata como curiosidad exotizante, sino como parte de una visión del mundo que explica equilibrio, enfermedad, protección y relación con la selva y el agua. Pedagógicamente, ayuda a reconocer diversidad de cosmovisiones y a practicar el respeto: no todo se explica igual en todas las culturas. También sirve para reflexionar sobre cómo el lenguaje nombra lo invisible (emociones, miedos, fuerzas).",
+      "contexto": "En lectura crítica, se pueden comparar relatos: cómo diferentes culturas explican enfermedad o sueños. En convivencia, se puede trabajar el tema del respeto: hablar de creencias sin burlas y sin imponer.",
+      "audio": "./assets/audio/glosario/glo_embera_jai.mp3"
+    },
+    {
+      "id": "glo_embera_dojura",
+      "espanol": "Espíritus del agua",
+      "indigena": "Dojura",
+      "lengua": "Emberá (familia Emberá)",
+      "descripcion": "“Dojura” se menciona como espíritus asociados al agua en la cosmovisión emberá. En términos pedagógicos, permite trabajar el cuidado del agua desde una perspectiva cultural: el agua no es solo un recurso; es un ser con el que se convive. Esto ayuda a construir sensibilidad ambiental y respeto por ríos y quebradas. También abre debates sobre contaminación, minería y decisiones colectivas: ¿qué significa ‘ofender’ un río? ¿cómo se repara el daño?",
+      "contexto": "En territorios rurales, la relación con el río es cotidiana: baño, pesca, transporte, juego. En la escuela, se puede hacer un proyecto de ‘memoria del río’ con entrevistas, fotos y acuerdos de cuidado.",
+      "audio": "./assets/audio/glosario/glo_embera_dojura.mp3"
+    },
+    {
+      "id": "glo_embera_wandra",
+      "espanol": "Madres de animales y plantas (guardianas)",
+      "indigena": "Wandra",
+      "lengua": "Emberá (familia Emberá)",
+      "descripcion": "“Wandra” se refiere a madres o guardianas de animales y plantas en relatos y marcos de sentido emberá. Pedagógicamente, este término permite hablar de biodiversidad y cuidado: si hay ‘madres’ de la vida, entonces hay deberes de respeto. Además, ayuda a pensar en límites: no extraer de más, no cazar sin necesidad, no talar sin reponer. En un LMS rural, este concepto es clave para educación ambiental con enfoque cultural.",
+      "contexto": "En proyectos de huerta o biodiversidad, se puede trabajar como metáfora: ‘si el monte tuviera voz, ¿qué diría?’. En actividades de escritura, se puede crear un relato sobre una guardiana del bosque y un acuerdo comunitario.",
+      "audio": "./assets/audio/glosario/glo_embera_wandra.mp3"
+    },
+    {
+      "id": "glo_embera_antumia",
+      "espanol": "Selva profunda (relación con el monte)",
+      "indigena": "Antumiá",
+      "lengua": "Emberá (familia Emberá)",
+      "descripcion": "“Antumiá” aparece asociado a la selva profunda dentro de marcos culturales emberá. En educación rural, hablar de ‘monte’ no es solo hablar de árboles: es hablar de alimento, medicina, refugio, ruta, riesgo, memoria y espiritualidad. Pedagógicamente, el término permite conectar ciencias naturales con narrativas: cómo se cuida el bosque, qué especies habitan, qué prácticas lo protegen. También invita a debatir sobre presiones externas: deforestación, economía, conflictos y protección del territorio.",
+      "contexto": "Útil en proyectos de lectura y escritura: relatos del monte, crónicas de caminata, mapas de biodiversidad. En pensamiento crítico, se puede analizar un problema: ¿qué pasa cuando se rompe el equilibrio del monte?",
+      "audio": "./assets/audio/glosario/glo_embera_antumia.mp3"
+    }
+  ]
+}
+

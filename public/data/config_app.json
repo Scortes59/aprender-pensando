@@ -1,0 +1,45 @@
+{
+  "app": {
+    "nombre": "APRENDER PENSANDO",
+    "version": "1.0.0",
+    "descripcion": "LMS / biblioteca educativa 100% estática (HTML + CSS + JS + JSON), offline-first, orientada a territorios rurales e interculturales de Colombia. Enfoque especial: Escuela del corregimiento Nápoles, Trujillo (Valle del Cauca).",
+    "autor": "Comunidad educativa (docentes, estudiantes y familias)",
+    "idioma": "es-CO",
+    "basePath": "./",
+    "fechaConstruccion": "2026-01-30"
+  },
+  "enfoque": {
+    "territorio": "Rural e intercultural",
+    "poblaciones": [
+      "Zonas rurales",
+      "Comunidades vulnerables",
+      "Pueblos indígenas",
+      "Escuela del corregimiento Nápoles (Trujillo, Valle, Colombia)"
+    ],
+    "principios": [
+      "Aprendizaje situado (conecta con el territorio)",
+      "Interculturalidad (diálogo de saberes sin imposición)",
+      "Lectura y escritura con propósito comunitario",
+      "Pensamiento crítico para decisiones informadas",
+      "Convivencia, participación y cuidado de la vida",
+      "Tecnología responsable (IA con ética y verificación)"
+    ]
+  },
+  "ui": {
+    "tema": "azul-suave",
+    "destacados": {
+      "cursos": [
+        "comprension-lectora-rural",
+        "pensamiento-critico-territorios-rurales",
+        "ia-responsable"
+      ]
+    }
+  },
+  "offline": {
+    "cacheAppShell": true,
+    "cacheDatosJSON": true,
+    "portafolio": "IndexedDB",
+    "nota": "No hay servidor: la 'sincronización' significa refrescar contenido JSON cuando hay internet y mantener tus evidencias localmente."
+  }
+}
+

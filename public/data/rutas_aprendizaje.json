@@ -1,0 +1,52 @@
+{
+  "rutas": [
+    {
+      "id": "ruta-estudiante-rural",
+      "nombre": "Ruta del estudiante rural (fundamentos)",
+      "descripcion": "Una ruta sugerida para fortalecer lectura, pensamiento crítico y escritura, conectando con la vida diaria del territorio. Ideal para grados 6° a 9° con acompañamiento docente.",
+      "duracionSugerida": "10–14 semanas",
+      "pasos": [
+        { "tipo": "curso", "ref": "comprension-lectora-rural", "meta": "Leer con propósito y comprender textos del territorio." },
+        { "tipo": "curso", "ref": "pensamiento-critico-territorios-rurales", "meta": "Aprender a preguntar, argumentar y verificar." },
+        { "tipo": "curso", "ref": "produccion-texto-academico", "meta": "Escribir textos académicos con evidencia local." }
+      ],
+      "hitos": [
+        "Portafolio: diario de campo con 4 entradas",
+        "Audio: lectura en voz alta de 2 minutos (fluidez y comprensión)",
+        "Texto final: informe o ensayo corto con referencias"
+      ]
+    },
+    {
+      "id": "ruta-docente-intercultural",
+      "nombre": "Ruta docente intercultural (aula y comunidad)",
+      "descripcion": "Ruta para docentes que buscan integrar interculturalidad, convivencia y ciudadanía digital en proyectos de aula, con glosario y portafolio offline.",
+      "duracionSugerida": "8–12 semanas",
+      "pasos": [
+        { "tipo": "curso", "ref": "bilinguismo-intercultural", "meta": "Diseñar actividades bilingües y respetuosas de los saberes." },
+        { "tipo": "curso", "ref": "convivencia-participacion-comunitaria", "meta": "Fortalecer acuerdos, participación y mediación escolar." },
+        { "tipo": "curso", "ref": "ia-responsable", "meta": "Usar IA como apoyo con ética, verificación y cuidado de datos." }
+      ],
+      "hitos": [
+        "Glosario: 3 audios subidos (pronunciación por término)",
+        "Proyecto de aula: acta simple de acuerdos y seguimiento",
+        "Guía docente: rúbrica formativa aplicada en una evidencia"
+      ]
+    },
+    {
+      "id": "ruta-juventud-liderazgo",
+      "nombre": "Ruta de liderazgo juvenil (territorio y participación)",
+      "descripcion": "Ruta para líderes juveniles: convivencia, participación y pensamiento crítico para tomar decisiones informadas sobre problemas del territorio (agua, ambiente, convivencia, cultura).",
+      "duracionSugerida": "6–10 semanas",
+      "pasos": [
+        { "tipo": "curso", "ref": "convivencia-participacion-comunitaria", "meta": "Aprender diálogo, acuerdos y participación." },
+        { "tipo": "curso", "ref": "pensamiento-critico-territorios-rurales", "meta": "Analizar problemas y proponer acciones." }
+      ],
+      "hitos": [
+        "Debate: reglas de diálogo y acta de acuerdos",
+        "Mapa de actores: quiénes participan y cómo",
+        "Propuesta: acción comunitaria concreta y evaluable"
+      ]
+    }
+  ]
+}
+
