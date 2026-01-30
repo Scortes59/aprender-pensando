@@ -1,0 +1,4 @@
+/* Alias requerido por la estructura solicitada.
+   El estilo real vive en /public/styles.css para simplificar el deploy. */
+@import url("../../styles.css");
+

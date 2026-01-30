@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b4aa2" />
+    <title>APRENDER PENSANDO · Módulo</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./assets/img/logo.png" />
+  </head>
+  <body>
+    <script>
+      // Uso: modulo.html?curso=comprension-lectora-rural&modulo=clr-m1
+      const q = new URLSearchParams(location.search);
+      const curso = q.get("curso");
+      const modulo = q.get("modulo");
+      const target = (curso && modulo)
+        ? `#/cursos/${encodeURIComponent(curso)}/modulo/${encodeURIComponent(modulo)}`
+        : "#/cursos";
+      if (!location.hash || location.hash === "#") location.hash = target;
+    </script>
+    <script type="module" src="./router.js"></script>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b4aa2" />
+    <title>APRENDER PENSANDO · Cursos</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./assets/img/logo.png" />
+  </head>
+  <body>
+    <script>
+      // Entrada “multi-página” compatible con hosting estático:
+      // si no hay hash, dirigimos a la ruta SPA correspondiente.
+      if (!location.hash || location.hash === "#") location.hash = "#/cursos";
+    </script>
+    <script type="module" src="./router.js"></script>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
+

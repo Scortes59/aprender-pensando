@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b4aa2" />
+    <meta name="description" content="APRENDER PENSANDO — LMS rural e intercultural. Biblioteca educativa estática, offline-first, sin backend." />
+    <title>APRENDER PENSANDO</title>
+    <link rel="preconnect" href="." />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./assets/img/logo.png" />
+  </head>
+  <body>
+    <noscript>
+      Esta plataforma necesita JavaScript para funcionar. Puedes abrirla desde un hosting estático (GitHub Pages/Vercel/Netlify) o con un servidor local.
+    </noscript>
+
+    <div class="app" id="appRoot">
+      <aside class="sidebar" id="sidebar">
+        <div class="brand">
+          <img class="brand__logo" src="./assets/img/logo.png" alt="Logo APRENDER PENSANDO" />
+          <div class="brand__text">
+            <div class="brand__name">APRENDER</div>
+            <div class="brand__name brand__name--alt">PENSANDO</div>
+            <div class="brand__tag">LMS rural e intercultural</div>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Navegación principal">
+          <a class="nav__link" href="#/" data-route>
+            <span class="nav__icon" aria-hidden="true">🏠</span>
+            <span>Inicio</span>
+          </a>
+          <a class="nav__link" href="#/cursos" data-route>
+            <span class="nav__icon" aria-hidden="true">📚</span>
+            <span>Biblioteca de cursos</span>
+          </a>
+          <a class="nav__link" href="#/portafolio" data-route>
+            <span class="nav__icon" aria-hidden="true">🗂️</span>
+            <span>Portafolio digital</span>
+          </a>
+          <a class="nav__link" href="#/glosario" data-route>
+            <span class="nav__icon" aria-hidden="true">🌿</span>
+            <span>Glosario indígena</span>
+          </a>
+        </nav>
+
+        <div class="sidebar__footer">
+          <div class="pill">
+            <span class="pill__dot" aria-hidden="true"></span>
+            <span id="offlineStatus">Modo offline listo</span>
+          </div>
+          <div class="sidebar__small">
+            Diseñado para la Escuela del corregimiento Nápoles (Trujillo, Valle) y comunidades rurales, vulnerables e indígenas.
+          </div>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <button class="iconBtn" id="btnToggleSidebar" aria-label="Abrir/cerrar menú">
+            ☰
+          </button>
+          <div class="topbar__title">
+            <div class="topbar__kicker" id="routeKicker">Plataforma educativa</div>
+            <div class="topbar__heading" id="routeTitle">APRENDER PENSANDO</div>
+          </div>
+          <div class="topbar__actions">
+            <button class="btn btn--soft" id="btnRecargarDatos" type="button">Recargar contenido</button>
+          </div>
+        </header>
+
+        <section class="content" id="view" aria-live="polite">
+          <div class="skeleton">
+            <div class="skeleton__line"></div>
+            <div class="skeleton__line"></div>
+            <div class="skeleton__line"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- Botón flotante + panel lateral del glosario (siempre visible) -->
+    <button class="fab" id="glosarioFab" aria-label="Abrir glosario indígena">
+      🌿
+      <span class="fab__label">Glosario</span>
+    </button>
+    <aside class="drawer" id="glosarioDrawer" aria-label="Glosario indígena">
+      <div class="drawer__header">
+        <div>
+          <div class="drawer__title">Glosario indígena</div>
+          <div class="drawer__subtitle">Búsqueda rápida, contexto rural y audio opcional (offline).</div>
+        </div>
+        <button class="iconBtn" id="glosarioCerrar" aria-label="Cerrar glosario">✕</button>
+      </div>
+
+      <div class="drawer__body">
+        <label class="field">
+          <span class="field__label">Buscar</span>
+          <input class="input" id="glosarioBuscar" placeholder="Ej. Ayni, Kiwe, Pütchipü'üi..." autocomplete="off" />
+        </label>
+        <div class="drawer__hint">
+          Consejo: también puedes guardar audios por término (se almacenan localmente en tu dispositivo).
+        </div>
+        <div class="drawer__list" id="glosarioLista"></div>
+      </div>
+    </aside>
+    <div class="backdrop" id="drawerBackdrop" hidden></div>
+
+    <script type="module" src="./router.js"></script>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
