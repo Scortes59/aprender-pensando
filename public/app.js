@@ -121,71 +121,24 @@ function fileToDataURL(file) {
   });
 }
 
-// --- Data loading (JSON “base de datos”) ---
-const CACHE_KEY = "aprenderPensando_cache_v1";
-const state = {
-  cursos: null,
-  lecturas: null,
-  actividades: null,
-  glosario: null,
-  lastLoadedAt: 0,
-};
-
-async function loadAllData({ force = false } = {}) {
-  const cacheRaw = localStorage.getItem(CACHE_KEY);
-  const cache = cacheRaw ? safeJson(cacheRaw) : null;
-
-  if (!force && cache && cache.cursos && cache.lecturas && cache.actividades && cache.glosario) {
-    state.cursos = cache.cursos;
-    state.lecturas = cache.lecturas;
-    state.actividades = cache.actividades;
-    state.glosario = cache.glosario;
-    state.lastLoadedAt = cache.lastLoadedAt || Date.now();
-  }
-
-  try {
-    const bust = `?v=${Date.now()}`;
-    const [cursos, lecturas, actividades, glosario] = await Promise.all([
-      fetchJSON(`./data/cursos.json${bust}`),
-      fetchJSON(`./data/lecturas.json${bust}`),
-      fetchJSON(`./data/actividades.json${bust}`),
-      fetchJSON(`./data/glosario.json${bust}`),
-    ]);
-    state.cursos = cursos;
-    state.lecturas = lecturas;
-    state.actividades = actividades;
-    state.glosario = glosario;
-    state.lastLoadedAt = Date.now();
-
-    localStorage.setItem(CACHE_KEY, JSON.stringify({
-      cursos, lecturas, actividades, glosario,
-      lastLoadedAt: state.lastLoadedAt,
-    }));
-  } catch (e) {
-    // si no hay red pero hay cache, seguimos
-    if (!state.cursos) throw e;
-  }
-}
-
+// --- Datos estáticos (window.APP_DATA, sin fetch) ---
 function safeJson(raw) {
   try { return JSON.parse(raw); } catch { return null; }
 }
 
-async function fetchJSON(url) {
-  const res = await fetch(url, { cache: "no-store" });
-  if (!res.ok) throw new Error(`No se pudo cargar ${url} (${res.status})`);
-  return await res.json();
+function getData() {
+  return window.APP_DATA || {};
 }
 
 function findCourse(courseId) {
-  return (state.cursos?.courses || []).find((c) => c.id === courseId) || null;
+  return (getData().cursos?.courses || []).find((c) => c.id === courseId) || null;
 }
 function findModule(courseId, moduleId) {
   const c = findCourse(courseId);
   return c?.modulos?.find((m) => m.id === moduleId) || null;
 }
 function findLesson(lessonId) {
-  for (const c of (state.cursos?.courses || [])) {
+  for (const c of (getData().cursos?.courses || [])) {
     for (const m of (c.modulos || [])) {
       const l = (m.lecciones || []).find((x) => x.id === lessonId);
       if (l) return { course: c, module: m, lesson: l };
@@ -194,13 +147,13 @@ function findLesson(lessonId) {
   return null;
 }
 function getReading(readingId) {
-  return (state.lecturas?.lecturas || []).find((x) => x.id === readingId) || null;
+  return (getData().lecturas || []).find((x) => x.id === readingId) || null;
 }
 function getActivity(activityId) {
-  return (state.actividades?.actividades || []).find((x) => x.id === activityId) || null;
+  return (getData().actividades?.actividades || []).find((x) => x.id === activityId) || null;
 }
 function getQuiz(quizId) {
-  return (state.actividades?.quizzes || []).find((x) => x.id === quizId) || null;
+  return (getData().actividades?.quizzes || []).find((x) => x.id === quizId) || null;
 }
 
 // --- UI: Glosario flotante ---
@@ -242,9 +195,9 @@ async function renderGlossaryList(query) {
   const list = $("#glosarioLista");
   if (!list) return;
   const q = (query || "").trim().toLowerCase();
-  const terms = (state.glosario?.terminos || []);
+  const terms = (getData().glosario || []);
   const filtered = !q ? terms : terms.filter((t) => {
-    const hay = `${t.espanol} ${t.indigena} ${t.lengua} ${t.descripcion} ${t.contexto}`.toLowerCase();
+    const hay = `${t.espanol || ""} ${t.indigena || ""} ${t.lengua || ""} ${t.descripcion || ""} ${t.contexto || ""}`.toLowerCase();
     return hay.includes(q);
   });
 
@@ -323,7 +276,7 @@ function viewHome() {
           resguardos y comunidades donde la conectividad es intermitente o costosa.
         </p>
         <div class="card__meta">
-          <span class="chip chip--brand">100% estático (HTML/CSS/JS/JSON)</span>
+          <span class="chip chip--brand">100% estático (HTML/CSS/JS)</span>
           <span class="chip chip--ok">Offline-first (portafolio + audios)</span>
           <span class="chip">Enfoque rural</span>
           <span class="chip">Enfoque intercultural</span>
@@ -376,7 +329,7 @@ function viewHome() {
           <a class="btn" href="#/portafolio">Abrir portafolio digital</a>
           <a class="btn btn--soft" href="#/glosario">Explorar glosario indígena</a>
           <span class="spacer"></span>
-          <span class="muted">Contenido cargado: ${fmtDate(state.lastLoadedAt || Date.now())}</span>
+          <span class="muted">Contenido estático (sin servidor)</span>
         </div>
       </div>
     </div>
@@ -388,7 +341,7 @@ function viewHome() {
 function viewCourses() {
   setText("#routeKicker", "Biblioteca");
   setText("#routeTitle", "Cursos disponibles");
-  const courses = (state.cursos?.courses || []);
+  const courses = (getData().cursos?.courses || []);
 
   const cards = courses.map((c) => `
     <div class="card" style="grid-column: span 12;">
@@ -752,6 +705,33 @@ async function viewPortfolio() {
   setText("#routeKicker", "Portafolio");
   setText("#routeTitle", "Evidencias offline (sin servidor)");
 
+  const evidenciasEjemplo = (getData().evidenciasEjemplo || []);
+  const ejemplosHtml = evidenciasEjemplo.length ? evidenciasEjemplo.map((e) => {
+    const preview =
+      e.type === "texto" && e.content
+        ? `<div class="muted" style="margin-top:8px; line-height:1.5">${escapeHtml(String(e.content).slice(0, 180))}${String(e.content).length > 180 ? "…" : ""}</div>`
+        : e.type === "imagen" && e.content
+          ? `<img alt="Evidencia" src="${escapeHtml(e.content)}" style="width:100%; max-height:180px; object-fit:cover; border-radius:14px; border:1px solid rgba(255,255,255,.10); margin-top:10px"/>`
+          : e.type === "audio" && e.content
+            ? `<audio controls preload="none" src="${escapeHtml(e.content)}" style="width:100%; margin-top:10px"></audio>`
+            : `<div class="muted" style="margin-top:8px">Ejemplo de evidencia (${escapeHtml(e.type)}). Puedes crear una similar desde el formulario.</div>`;
+    return `
+      <div class="item">
+        <div class="row">
+          <div>
+            <div class="item__title">${escapeHtml(e.titulo || "(Sin título)")}</div>
+            <p class="item__sub">${escapeHtml(e.descripcion || "")}</p>
+            <div class="card__meta" style="margin-top:8px">
+              <span class="chip chip--brand">${escapeHtml(e.type)}</span>
+              <span class="chip">Ejemplo estático</span>
+            </div>
+          </div>
+        </div>
+        ${preview}
+      </div>
+    `;
+  }).join("") : "";
+
   const evidences = await idbGetAll("evidences", "by_createdAt");
   evidences.sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0));
 
@@ -783,6 +763,16 @@ async function viewPortfolio() {
     `;
   }).join("") : `<div class="notice">Aún no tienes evidencias guardadas. Crea la primera abajo.</div>`;
 
+  const textoUso = `
+    <p>El portafolio digital te permite guardar evidencias del aprendizaje sin depender de internet ni de un servidor. Todo se almacena en tu dispositivo (IndexedDB). Puedes usar:</p>
+    <ul>
+      <li><b>Texto:</b> relatos, informes de lectura, diarios de campo, borradores de texto académico, reflexiones sobre convivencia.</li>
+      <li><b>Fotos:</b> imágenes de trabajos, huerta escolar, camino, carteles bilingües, actas. Se guardan en formato base64.</li>
+      <li><b>Audios:</b> lecturas en voz alta, entrevistas a mayores, grabaciones de pronunciación del glosario. También en base64.</li>
+    </ul>
+    <p>Para cada evidencia conviene poner un <b>título</b> claro y una <b>descripción</b> (qué aprendiste, qué te costó, qué harías diferente). Así el portafolio se convierte en memoria del proceso. Puedes editar y eliminar entradas cuando quieras. Los datos son solo tuyos y no se envían a ningún servidor.</p>
+  `;
+
   $("#view").innerHTML = `
     <div class="grid">
       <div class="card card--soft" style="grid-column: span 12;">
@@ -796,7 +786,17 @@ async function viewPortfolio() {
           <span class="chip">Edición y eliminación</span>
           <span class="chip">Privacidad: los datos quedan en tu dispositivo</span>
         </div>
+        <div class="divider"></div>
+        <div class="prose">${textoUso}</div>
       </div>
+
+      ${ejemplosHtml ? `
+      <div class="card card--soft" style="grid-column: span 12;">
+        <h3 class="card__title" style="font-size:16px;">Ejemplos de evidencias</h3>
+        <p class="card__subtitle" style="margin-top:8px">Algunas tarjetas de ejemplo para inspirarte. Crea las tuyas abajo.</p>
+        <div class="list">${ejemplosHtml}</div>
+      </div>
+      ` : ""}
 
       <div class="card" style="grid-column: span 12;">
         <h3 class="card__title" style="font-size:16px;">Mis evidencias</h3>
@@ -877,7 +877,7 @@ function viewGlossaryPage() {
         <div class="divider"></div>
         <div class="row">
           <button class="btn btn--brand" type="button" id="openGlossaryFromPage">Abrir panel de glosario</button>
-          <span class="muted">Términos disponibles: <b>${(state.glosario?.terminos || []).length}</b></span>
+          <span class="muted">Términos disponibles: <b>${(getData().glosario || []).length}</b></span>
         </div>
       </div>
       <div class="card" style="grid-column: span 12;">
@@ -1086,13 +1086,26 @@ async function boot() {
   window.addEventListener("online", updateOfflinePill);
   window.addEventListener("offline", updateOfflinePill);
 
-  $("#btnRecargarDatos")?.addEventListener("click", async () => {
-    localStorage.removeItem(CACHE_KEY);
-    await loadAllData({ force: true });
-    router.go(getHashPath());
-  });
+  const data = getData();
+  if (!data.cursos?.courses?.length) {
+    setText("#routeKicker", "Configuración");
+    setText("#routeTitle", "Sin contenido cargado");
+    $("#view").innerHTML = `
+      <div class="grid">
+        <div class="card" style="grid-column: span 12;">
+          <h2 class="card__title">No hay contenido cargado todavía</h2>
+          <p class="card__subtitle">Pide al docente que revise la configuración. La aplicación necesita que esté disponible el archivo de datos estáticos (APP_DATA).</p>
+          <div class="row">
+            <a class="btn btn--brand" href="#/">Volver al inicio</a>
+          </div>
+        </div>
+      </div>
+    `;
+    return;
+  }
 
-  await loadAllData();
+  $("#btnRecargarDatos")?.addEventListener("click", () => router.go(getHashPath()));
+
   await registerSW();
   await renderGlossaryList("");
 
@@ -1114,6 +1127,21 @@ window.addEventListener("load", () => setActiveNav(getHashPath()));
 
 boot().catch((e) => {
   console.error(e);
-  viewNotFound("No se pudo iniciar la app. Revisa que los archivos JSON existan y que estés sirviendo el proyecto desde un hosting/servidor estático.");
+  setText("#routeKicker", "Error");
+  setText("#routeTitle", "No hay contenido cargado");
+  const view = $("#view");
+  if (view) {
+    view.innerHTML = `
+      <div class="grid">
+        <div class="card" style="grid-column: span 12;">
+          <h2 class="card__title">No hay contenido cargado todavía</h2>
+          <p class="card__subtitle">Pide al docente que revise la configuración.</p>
+          <div class="row">
+            <a class="btn btn--brand" href="#/">Volver al inicio</a>
+          </div>
+        </div>
+      </div>
+    `;
+  }
 });
 
